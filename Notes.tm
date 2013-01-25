@@ -66,6 +66,31 @@
   in any ball in A, ie. if in any ball <math|B\<subset\>A> there exist a ball
   <math|B<rprime|'>\<subset\>B>, which does not contain points of V.
 
+  Proof of the latter sentence (ie deduction from definition).\ 
+
+  Proof by contradiction: Assume that for all balls
+  <math|B<rprime|'>\<subset\>B\<nocomma\>> <math|B<rprime|'>\<cap\>V
+  \<neq\>\<Phi\>>.\ 
+
+  Take an arbitary <math|x\<space\> >in <math|B>. Then exists
+  <math|\<varepsilon\>> such that <math|B<rsub|\<varepsilon\>><around*|(|x|)>\<subset\>B>.
+  But then <math|\<exists\>x<rsub|1>\<in\>B<rsub|\<varepsilon\>><around*|(|x|)>\<nocomma\>>,
+  <math|x<rsub|1>\<in\>V> (by assumption). Let
+  <math|\<varepsilon\><rsub|1>=d<around*|(|x\<nocomma\>,x<rsub|1>|)>\<nosymbol\>>.
+  Then <math|\<varepsilon\><rsub|1>\<less\>\<varepsilon\>>. Consider the ball
+  <math|B<rsub|\<varepsilon\><rsub|1>><around*|(|x<rsub|>|)>>. Then
+  <math|\<exists\>x<rsub|2>\<in\>B<rsub|\<varepsilon\><rsub|1>><around*|(|x|)>\<nocomma\>>,
+  <math|x<rsub|2>\<in\>V>. As before define
+  \ \ <math|\<varepsilon\><rsub|1>=d<around*|(|x\<nocomma\>,x<rsub|2>|)>\<nosymbol\>\<nosymbol\>.>
+  Then <math|\<varepsilon\><rsub|2>\<less\>\<varepsilon\>>. Like this we
+  build an infinite sequence <math|x<rsub|n>>, with <math|x<rsub|n> >tending
+  to x (because <math|\<varepsilon\><rsub|n>\<longrightarrow\>0>) and
+  <math|x<rsub|n>\<in\>V>for all natural numbers n. From this is it follows
+  that <math|x\<in\><wide|V|\<bar\>>>. But as <math|x >was chosen
+  aribitrarily <math|\<Rightarrow\>> <math|B\<subset\><wide|V|\<bar\>>>.
+  Contradiction. <math|\<Rightarrow\> \<exists\>B<rprime|'>\<subset\>B >such
+  that <math|B<rprime|'>\<cap\>V =\<Phi\>>
+
   A Cantor set is not where dense in R.
 
   \ \ 
