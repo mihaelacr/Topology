@@ -53,12 +53,24 @@
 
   \ A function <math|f:X\<longrightarrow\>Y> with
   <math|<around*|(|X,d<rsub|x>|)> >and <math|<around*|(|Y,d<rsub|y>|)>>
-  metric spaces is said to be continous if:
+  metric spaces is said to be continous at <math|x >if:
 
   <\equation*>
     \<forall\>\<varepsilon\>\<gtr\>0\<exists\>\<delta\> such that
-    d<rsub|x><around*|(|x<rsub|1\<nocomma\>>,x<rsub|2>|)>\<less\>\<delta\>\<Rightarrow\>
-    d<rsub|y><around*|(|f<around*|(|x<rsub|1>\<nocomma\>|)>,f<around*|(|x<rsub|2>|)>|)>\<less\>\<varepsilon\>
+    d<rsub|x><around*|(|x<rsub|1\<nocomma\>>,x<rsub|>|)>\<less\>\<delta\>\<Rightarrow\>
+    d<rsub|y><around*|(|f<around*|(|x<rsub|1>\<nocomma\>|)>,f<around*|(|x<rsub|>|)>|)>\<less\>\<varepsilon\>
+  </equation*>
+
+  <with|font-series|bold|Important> alternative ways of expressing the above:
+
+  <\equation*>
+    \<forall\>\<varepsilon\>\<gtr\>0\<exists\>\<delta\> such that
+    f<around*|(|B<rsub|\<delta\>><around*|(|x|)>|)>\<subset\>B<rsub|\<varepsilon\>><around*|(|x|)>
+  </equation*>
+
+  <\equation*>
+    \<forall\>\<varepsilon\>\<gtr\>0\<exists\>\<delta\> such that
+    B<rsub|\<delta\>><around*|(|x|)>\<subset\>f<rsup|-1><around*|(|B<rsub|\<varepsilon\>><around*|(|x|)>|)>
   </equation*>
 
   <with|font-series|bold|Lemma>:\ 
@@ -67,7 +79,13 @@
   <math|<around*|(|X,d<rsub|x>|)> >and <math|<around*|(|Y,d<rsub|y>|)>>
   metric spaces is continous if for all open sets <math|U\<subset\>Y>,
 
-  <math|f<rsup|><rsub|><rsup|>>
+  <math|f<rsup|><rsub|><rsup|-1><around*|(|U|)>> is open in X.
+
+  <with|font-series|bold|Properties of open sets:>
+
+  1) The intersection of a finite number of open sets is open.
+
+  2) The union (finite, countable or uncountable) of open sets is open.
 
   <with|font-series|bold|Definition>:
 
@@ -77,11 +95,32 @@
 
   <with|font-series|bold|Definition>:
 
+  A set <math|A >if <with|font-series|bold|closed> in a metric space
+  <math|<around*|(|X,d|)> if and only if X\<backslash\>A> is open in
+  <math|X.>
+
+  <with|font-series|bold|Properties of closed sets:>
+
+  1)The union of a finite number of closed sets is closed.
+
+  2)The intersection (finite, countable or uncountable) of closed sets is
+  closed.
+
+  <with|font-series|bold|Lemma>:\ 
+
+  A function <math|f:X\<longrightarrow\>Y> with
+  <math|<around*|(|X,d<rsub|x>|)> >and <math|<around*|(|Y,d<rsub|y>|)>>
+  metric spaces is continous if for all closed sets <math|U\<subset\>Y>,
+
+  <math|f<rsup|><rsub|><rsup|-1><around*|(|U|)>> is closed in X.
+
+  <with|font-series|bold|Definition>:
+
   The <with|font-series|bold|closure> of a set <math|A >in a metric space is:
 
   <\equation*>
     <wide|A|\<bar\>>=<around*|{|x \<in\>X :
-    \<forall\>B<rsub|\<varepsilon\>><around*|(|x|)>\<cap\>A\<neq\>\<Phi\>|}>
+    \<forall\>\<varepsilon\>B<rsub|\<varepsilon\>><around*|(|x|)>\<cap\>A\<neq\>\<Phi\>|}>
   </equation*>
 
   \;
@@ -104,6 +143,31 @@
   A point <math|a >is in <math|<wide|A|\<bar\>>> iff <math|\<exists\>
   x<rsub|n> \<longrightarrow\>a> , with <math|x<rsub|n>> in A,
   <math|\<forall\>x<rsub|n>\<in\>A>.
+
+  <with|font-series|bold|Definition>:
+
+  <with|font-series|bold|Cauchy sequence>: A sequence is called Cauhcy iff
+  \ <math|\<forall\>\<varepsilon\> \<exists\>N such that \<forall\>n,m\<gtr\>
+  N d<around*|(|x<rsub|n>,x<rsub|m>|)>\<less\>\<varepsilon\>>
+
+  <with|font-series|bold|Lemma:>
+
+  In a metric space, any convergent sequence is a Cauchy sequence.
+
+  <with|font-series|bold|Properties of closures:>
+
+  1) <math|A\<subset\><wide|A|\<bar\>>>
+
+  2) <math|A\<subset\>B \<Rightarrow\> <wide|A|\<bar\>>\<subset\><wide|B|\<bar\>>>
+
+  3) <math|A is closed iff <wide|A|\<bar\>>=A>
+
+  4) <math|<wide|<wide|A|\<bar\>>|\<bar\>>=<wide|A|\<bar\>>>
+
+  5) <math|<wide|A|\<bar\>> >is closed
+
+  6) <math|<wide|A|\<bar\>> >is the smallest closed subset of <math|X> that
+  contains <math|A.>
 
   <with|font-series|bold|Definition>:
 
@@ -149,9 +213,50 @@
 
   A Cantor set is not where dense in R.
 
+  <with|font-series|bold|Definition>:
+
+  We call <math|<with|font-series|bold|<wide|A|\<dot\>>>> the
+  <with|font-series|bold|interior> of <math|A>, defined as follows:
+
+  <\equation*>
+    <wide|A|\<dot\>>=<around*|{|x \<in\>X : \<exists\>\<varepsilon\>
+    B<rsub|\<varepsilon\>><around*|(|x|)>\<subset\>A|}>
+  </equation*>
+
+  <with|font-series|bold|Properties of interior:>
+
+  1) <math|<wide|A|\<dot\>>\<subset\>A>
+
+  2) <math|A\<subset\>B \<Rightarrow\> <wide|A|\<dot\>>\<subset\><wide|B|\<dot\>>>
+
+  3) <math|A is open iff <wide|A|\<dot\>>=A>
+
+  4) <math|<wide|<wide|A|\<dot\>>|\<dot\>>= <wide|A|\<dot\>>>
+
+  5) <math|<wide|A|\<dot\>> >is open
+
+  6) <math|<wide|A|\<bar\>> >is the biggest open subset of <math|X> that
+  contained in <math|A.>
+
   \ \ 
 
-  \;
+  <with|font-series|bold|><with|font-series|bold|Definition:>
+
+  The <with|font-series|bold|boundary> of a set <math|A:>
+
+  <\equation*>
+    \<delta\>A=<wide|A|\<bar\>>\<backslash\><wide|A|\<dot\>>
+  </equation*>
+
+  <with|font-series|bold|Lemma>:
+
+  <\equation*>
+    x \<in\>\<delta\>A iff \<forall\>\<varepsilon\>\<gtr\>0
+    B<rsub|\<varepsilon\>><around*|(|x|)>\<cap\>A\<neq\>\<Phi\> and
+    B<rsub|\<varepsilon\>><around*|(|x|)>\<cap\><around*|(|X\<backslash\>A|)>\<neq\>\<Phi\>
+    </equation*>
+
+  TODO topologically equivalent metrics and Lipschitez equivalent metrics.
 </body>
 
 <\initial>
