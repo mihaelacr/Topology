@@ -13,6 +13,62 @@
     not to be replaced with a book or lecture notes.
   </abstract>
 
+  <with|font-series|bold|Definition:>
+
+  We call <math|d:X\<times\>X\<longrightarrow\>R> a metric on <math|X> if for
+  all <math|x, y, z> in <math|X>:
+
+  M1) <math|d<around*|(|x,y|)>\<geqslant\>0 > and
+  <math|d<around*|(|x,y|)>=0\<Rightarrow\>x=y>
+  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (Positivity)
+
+  M2) <math|d<around*|(|x,y|)>=d<around*|(|y\<nocomma\>,x|)>>
+  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (Symmetry)
+
+  M3) <math|d<around*|(|x,y|)>\<leqslant\>d<around*|(|x,z|)>+d<around*|(|z,y|)>
+  > \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (Triangle
+  inequality)
+
+  We call the tuple<math| (X, d)> a metric space.
+
+  TODO important metrics in Rn and functions
+
+  <with|font-series|bold|Definition>:
+
+  \ <with|font-series|bold|open ball >of radius <math|\<varepsilon\>> and
+  centre <math|x> in a metric space <math|<around*|(|X\<nocomma\>,d|)>>:\ 
+
+  <\equation*>
+    B<rsub|\<varepsilon\>><around*|(|x|)>=<around*|{|y\<in\>X:
+    d<around*|(|x,y|)>\<less\>\<varepsilon\>|}>
+  </equation*>
+
+  <with|font-series|bold|Definition>:
+
+  A <math|A> set is <with|font-series|bold|open >in a metric space
+  <math|<around*|(|X,d|)> >if for all <math|x >in <math|A> <math|\<exists\>
+  \<varepsilon\> B<rsub|\<varepsilon\>><around*|(|x|)>\<subset\>A>.
+
+  <with|font-series|bold|Definition:>
+
+  \ A function <math|f:X\<longrightarrow\>Y> with
+  <math|<around*|(|X,d<rsub|x>|)> >and <math|<around*|(|Y,d<rsub|y>|)>>
+  metric spaces is said to be continous if:
+
+  <\equation*>
+    \<forall\>\<varepsilon\>\<gtr\>0\<exists\>\<delta\> such that
+    d<rsub|x><around*|(|x<rsub|1\<nocomma\>>,x<rsub|2>|)>\<less\>\<delta\>\<Rightarrow\>
+    d<rsub|y><around*|(|f<around*|(|x<rsub|1>\<nocomma\>|)>,f<around*|(|x<rsub|2>|)>|)>\<less\>\<varepsilon\>
+  </equation*>
+
+  <with|font-series|bold|Lemma>:\ 
+
+  A function <math|f:X\<longrightarrow\>Y> with
+  <math|<around*|(|X,d<rsub|x>|)> >and <math|<around*|(|Y,d<rsub|y>|)>>
+  metric spaces is continous if for all open sets <math|U\<subset\>Y>,
+
+  <math|f<rsup|><rsub|><rsup|>>
+
   <with|font-series|bold|Definition>:
 
   A sequence <math|x<rsub|n> >with <math|n\<in\>N>, converges to
