@@ -23,10 +23,10 @@
   \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (Positivity)
 
   M2) <math|d<around*|(|x,y|)>=d<around*|(|y\<nocomma\>,x|)>>
-  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (Symmetry)
+  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (Symmetry)
 
   M3) <math|d<around*|(|x,y|)>\<leqslant\>d<around*|(|x,z|)>+d<around*|(|z,y|)>
-  > \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (Triangle
+  > \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (Triangle
   inequality)
 
   We call the tuple<math| (X, d)> a metric space.
@@ -86,6 +86,17 @@
   1) The intersection of a finite number of open sets is open.
 
   2) The union (finite, countable or uncountable) of open sets is open.
+
+  <with|font-series|bold|Lemma:>
+
+  A set is open iff it is a union of open balls.
+
+  <with|font-series|bold|Lemma>:\ 
+
+  <\equation*>
+    y\<in\>B<rsub|\<varepsilon\>><around*|(|x|)>\<Rightarrow\>
+    \<exists\>\<delta\> such tat B<rsub|\<delta\>><around*|(|y|)>\<subset\>B<rsub|\<varepsilon\>><around*|(|x|)>
+  </equation*>
 
   <with|font-series|bold|Definition>:
 
@@ -255,6 +266,27 @@
     B<rsub|\<varepsilon\>><around*|(|x|)>\<cap\>A\<neq\>\<Phi\> and
     B<rsub|\<varepsilon\>><around*|(|x|)>\<cap\><around*|(|X\<backslash\>A|)>\<neq\>\<Phi\>
     </equation*>
+
+  <\with|font-series|bold>
+    Definition:
+  </with>
+
+  A set <math|A >is said to be bounded if
+  <math|\<exists\>x<rsub|0>\<in\>X>and <math|\<exists\>r\<in\>R> such that
+  <math|d<around*|(|x<rsub|0>,x|)>\<less\>r\<nocomma\>,\<forall\>x\<in\>A>\ 
+
+  <with|font-series|bold|Note>
+
+  <math|x<rsub|0>> in the definition above can be replaced with any <math|x>
+  in <math|X.>
+
+  <with|font-series|bold|Definition>:
+
+  <\equation*>
+    <with|font-series|bold|diam><around*|(|A|)>=sup<around*|{|d<around*|(|x,y|)>\<nocomma\>,x,y\<in\>X\<nocomma\>|}>
+  </equation*>
+
+  \;
 
   TODO topologically equivalent metrics and Lipschitez equivalent metrics.
 </body>
