@@ -224,6 +224,15 @@
 
   A Cantor set is not where dense in R.
 
+  <with|font-series|bold|Lemma>:
+
+  A set <math|A> is closed iff it contains all its limit points.
+
+  (Follows from <math|A=<wide|A|\<bar\>>> iff A is closed and
+  <math|<wide|A|\<bar\>>=A\<cup\>limit points of A>
+
+  \;
+
   <with|font-series|bold|Definition>:
 
   We call <math|<with|font-series|bold|<wide|A|\<dot\>>>> the
@@ -267,6 +276,18 @@
     B<rsub|\<varepsilon\>><around*|(|x|)>\<cap\><around*|(|X\<backslash\>A|)>\<neq\>\<Phi\>
     </equation*>
 
+  <with|font-series|bold|Properties>
+
+  1) <math|<wide|A|\<dot\>>= A\<backslash\>\<delta\>A=<wide|A|\<bar\>>\<backslash\>\<delta\>A
+  >
+
+  2) <math|<wide|X\<backslash\>A|\<bar\>>=><math|X\<backslash\>><math|<wide|A|\<dot\>>>
+
+  3) <math|\<delta\>A = <wide|A|\<bar\>><rsup|>\<cap\><around*|(|<wide|X\<backslash\>A|\<bar\>>|)>=
+  \<delta\><around*|(|X\<backslash\>A|)>>
+
+  4) <math|\<delta\>A> is closed in X
+
   <\with|font-series|bold>
     Definition:
   </with>
@@ -283,7 +304,7 @@
   <with|font-series|bold|Definition>:
 
   <\equation*>
-    <with|font-series|bold|diam><around*|(|A|)>=sup<around*|{|d<around*|(|x,y|)>\<nocomma\>,x,y\<in\>X\<nocomma\>|}>
+    diam<around*|(|A|)>=sup<around*|{|d<around*|(|x,y|)>\<nocomma\>,x,y\<in\>X\<nocomma\>|}>
   </equation*>
 
   \;
