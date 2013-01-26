@@ -77,9 +77,18 @@
 
   A function <math|f:X\<longrightarrow\>Y> with
   <math|<around*|(|X,d<rsub|x>|)> >and <math|<around*|(|Y,d<rsub|y>|)>>
-  metric spaces is continous if for all open sets <math|U\<subset\>Y>,
+  metric spaces is continous iff for all open sets <math|U\<subset\>Y>,
 
   <math|f<rsup|><rsub|><rsup|-1><around*|(|U|)>> is open in X.
+
+  <with|font-series|bold|Lemma>:
+
+  A function <math|f:X\<longrightarrow\>Y> \ with
+  <math|<around*|(|X,d<rsub|x>|)> >and <math|<around*|(|Y,d<rsub|y>|)>>
+  metric spaces is continous iff for all <math|x<rsub|n>\<longrightarrow\>x
+  in X>
+
+  <math|f<around*|(|x<rsub|n>|)>\<longrightarrow\>f<around*|(|x|)> in Y.>
 
   <with|font-series|bold|Properties of open sets:>
 
