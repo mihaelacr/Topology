@@ -240,7 +240,9 @@
   (Follows from <math|A=<wide|A|\<bar\>>> iff A is closed and
   <math|<wide|A|\<bar\>>=A\<cup\>limit points of A>
 
-  \;
+  <with|font-series|bold|Proposition>
+
+  Any finite set is closed in a metric space.
 
   <with|font-series|bold|Definition>:
 
@@ -283,7 +285,7 @@
     x \<in\>\<delta\>A iff \<forall\>\<varepsilon\>\<gtr\>0
     B<rsub|\<varepsilon\>><around*|(|x|)>\<cap\>A\<neq\>\<Phi\> and
     B<rsub|\<varepsilon\>><around*|(|x|)>\<cap\><around*|(|X\<backslash\>A|)>\<neq\>\<Phi\>
-    </equation*>
+  </equation*>
 
   <with|font-series|bold|Properties>
 
