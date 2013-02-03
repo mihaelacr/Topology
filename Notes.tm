@@ -61,7 +61,8 @@
     d<around*|(|x,y|)>= max<around*|{|<around*|\||x<rsub|1>-y<rsub|1>|\|>,<around*|\||x<rsub|2>-y<rsub|2>|\|>,\<ldots\><around*|\||x<rsub|n>-y<rsub|n>|\|>|}>
   </equation*>
 
-  6) Consider the set of bounded functions on <math|<around*|[|a,b|]>>:\ 
+  6) Consider the set of <with|font-series|bold|bounded functions> on
+  <math|<around*|[|a,b|]>>:\ 
 
   <\equation*>
     f:<around*|[|a,b|]>\<rightarrow\> R ,\<exists\> K such
@@ -80,8 +81,8 @@
   prove that the metric is well defined. ie the sup is a number in R, not
   <math|\<infty\>>.
 
-  7)Consider the set of bounded continous functions on
-  <math|<around*|[|a,b|]>>: <math|C<around*|[|a,b|]>\<subset\>B<around*|[|a,b|]>>
+  7)Consider the set of <with|font-series|bold|bounded continous functions>
+  on <math|<around*|[|a,b|]>>: <math|C<around*|[|a,b|]>\<subset\>B<around*|[|a,b|]>>
 
   <\equation*>
     d<rsub|2><around*|(|f,g|)>= <around*|(|<big|int><rsup|b><rsub|a><around*|(|f<around*|(|x|)>-g<around*|(|x|)>|)><rsup|2>dx|)><rsup|1/2>
@@ -105,6 +106,10 @@
 
   <\equation*>
     <around*|\||<around*|\||x|\|>-<around*|\||y|\|>|\|>\<leqslant\><around*|\||x-y|\|>
+  </equation*>
+
+  <\equation*>
+    <big|int><rsup|b><rsub|a><around*|\||f<around*|(|x|)>|\|>dx\<geqslant\><around*|\||<big|int><rsup|b><rsub|a>f<around*|(|x|)>dx|\|>
   </equation*>
 
   <with|font-series|bold|Cauchy Bunyakovsky Schwarz>:
@@ -149,7 +154,18 @@
 
   <with|font-series|bold|Product metrics>
 
-  <with|font-series|bold|Submetrics>
+  <with|font-series|bold|Submetric>
+
+  Let <math|<around*|(|X,d<rsub|X>|)> >be a metric space. Then we can define
+  a metric <math|d<rsub|Y>> for any <math|Y\<subset\>X>, such that\ 
+
+  <\equation*>
+    d<rsub|Y><around*|(|x,y|)>=d<rsub|X><around*|(|x,y|)>
+    ,\<forall\>x,y\<in\>Y
+  </equation*>
+
+  <math|d<rsub|Y>> is said to be a restriction metric of Y, induced by
+  <math|d<rsub|X>>.
 
   <with|font-series|bold|Definition>:
 
@@ -171,7 +187,8 @@
 
   \ A function <math|f:X\<longrightarrow\>Y> with
   <math|<around*|(|X,d<rsub|x>|)> >and <math|<around*|(|Y,d<rsub|y>|)>>
-  metric spaces is said to be continous at <math|x >if:
+  metric spaces is said to be <with|font-series|bold|continous at <math|x
+  >>if:
 
   <\equation*>
     \<forall\>\<varepsilon\>\<gtr\>0\<exists\>\<delta\> such that
@@ -199,6 +216,20 @@
 
   <math|f<rsup|><rsub|><rsup|-1><around*|(|U|)>> is open in X.
 
+  <with|font-series|bold|Remark>
+
+  A function can be continous in a subspace without it being continuous in
+  the original space.
+
+  Example:
+
+  <\equation*>
+    f<around*|(|x|)>=<choice|<tformat|<table|<row|<cell|0,>|<cell|x\<in\>Q>>|<row|<cell|1,>|<cell|x\<in\>R\<backslash\>Q>>>>>
+  </equation*>
+
+  is continous on <math|Q> (as it is the constant function) but it is not
+  continous in R.
+
   <with|font-series|bold|Lemma>:
 
   A function <math|f:X\<longrightarrow\>Y> \ with
@@ -207,6 +238,21 @@
   in X>
 
   <math|f<around*|(|x<rsub|n>|)>\<longrightarrow\>f<around*|(|x|)> in Y.>
+
+  <with|font-series|bold|Definition>
+
+  A set S is called a <with|font-series|bold|neighbourhood> of a point
+  <math|x>, if <math|\<exists\> \<varepsilon\>\<gtr\>0 such that
+  B<rsub|\<varepsilon\>><around*|(|x|)>\<subset\>S>.
+
+  Note that a neighbourhood does not have to be continous.
+
+  <with|font-series|bold|Lemma>
+
+  A function<math| f:X\<rightarrow\>Y> is <with|font-series|bold|continous>
+  at <math|a > iff for any <with|font-series|bold|neighbourhood> <math|M> of
+  <math|f<around*|(|a|)> <around*|(|in Y|)>> there exists a neighbourhood
+  <math|N> of <math|a> such that <math|f<around*|(|N|)>\<subset\>M>.
 
   <with|font-series|bold|Properties of open sets:>
 
@@ -227,9 +273,13 @@
 
   <with|font-series|bold|Definition>:
 
-  A sequence <math|x<rsub|n> >with <math|n\<in\>N>, converges to
-  <math|l\<in\>X> iff <math|\<forall\>\<varepsilon\> \<exists\>N such that
-  \<forall\>n\<gtr\> N d<around*|(|x<rsub|n>,l|)>\<less\>\<varepsilon\>>
+  A <with|font-series|bold|sequence> <math|x<rsub|n> >with <math|n\<in\>N>,
+  <with|font-series|bold|converges> to <math|l\<in\>X> iff
+  <math|\<forall\>\<varepsilon\> \<exists\>N such that \<forall\>n\<gtr\> N
+  d<around*|(|x<rsub|n>,l|)>\<less\>\<varepsilon\>>.
+
+  Note that this says that a sequence converges if the sequence
+  <math|y<rsub|n>=d1<around*|(|x<rsub|n>,l|)> >converges to 0 in <math|R.>
 
   <with|font-series|bold|Definition>:
 
@@ -423,7 +473,7 @@
     Definition:
   </with>
 
-  A set <math|A >is said to be bounded if
+  A set <math|A >is said to be <with|font-series|bold|bounded> if
   <math|\<exists\>x<rsub|0>\<in\>X>and <math|\<exists\>r\<in\>R> such that
   <math|d<around*|(|x<rsub|0>,x|)>\<less\>r\<nocomma\>,\<forall\>x\<in\>A>\ 
 
@@ -432,11 +482,17 @@
   <math|x<rsub|0>> in the definition above can be replaced with any <math|x>
   in <math|X.>
 
-  <with|font-series|bold|Definition>:
+  <with|font-series|bold|Definition>:\ 
+
+  <with|font-series|bold|Diameter of a bounded set>
 
   <\equation*>
-    diam<around*|(|A|)>=sup<around*|{|d<around*|(|x,y|)>\<nocomma\>,x,y\<in\>X\<nocomma\>|}>
+    <with|font-series|bold|diam><around*|(|A|)>=sup<around*|{|d<around*|(|x,y|)>\<nocomma\>,x,y\<in\>X\<nocomma\>|}>
   </equation*>
+
+  Note that this implied that a set is <with|font-series|bold|bounded> iff
+  <math|\<exists\>> <math|K> such that <math|d<around*|(|x,y|)>\<leqslant\>K\<nocomma\>>,
+  <math|\<forall\>x,y\<in\>A>
 
   <with|font-series|bold|Definition:>
 
@@ -513,6 +569,45 @@
 
   In the <with|font-series|bold|discrete metric>, every set is both open and
   closed.
+
+  With the discrete metric, every space is bounded.
+
+  \;
+
+  <with|font-series|bold|Function properties used in the course>
+
+  Let <math|f: X\<rightarrow\>Y> and <math|A,B\<subset\>X>,
+  <math|C,D\<subset\>Y>
+
+  Then:
+
+  <\equation*>
+    f<around*|(|A\<cup\>B|)>=f<around*|(|A|)>\<cup\>f<around*|(|B|)>
+  </equation*>
+
+  <\equation*>
+    f<around*|(|A\<cap\>B|)>\<subset\>f<around*|(|A|)>\<cap\>f<around*|(|B|)>
+  </equation*>
+
+  <\equation*>
+    f<rsup|-1><around*|(|C\<cap\>D|)>=f<rsup|-1><around*|(|C|)>\<cap\>f<rsup|-1><around*|(|D|)>
+  </equation*>
+
+  <\equation*>
+    f<rsup|-1><around*|(|C\<cup\>D|)>=f<rsup|-1><around*|(|C|)>\<cup\>f<rsup|-1><around*|(|D|)>
+  </equation*>
+
+  <\equation*>
+    f<around*|(|A\<backslash\>B|)>\<supset\>f<around*|(|A|)>\<backslash\>f<around*|(|B|)>
+  </equation*>
+
+  <\equation*>
+    f<rsup|-1><around*|(|Y\<backslash\>A|)>=X\<backslash\>f<rsup|-1><around*|(|A|)>
+  </equation*>
+
+  \;
+
+  \;
 </body>
 
 <\initial>
