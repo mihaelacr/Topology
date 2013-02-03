@@ -20,20 +20,136 @@
 
   M1) <math|d<around*|(|x,y|)>\<geqslant\>0 > and
   <math|d<around*|(|x,y|)>=0\<Rightarrow\>x=y>
-  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (Positivity)
+  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <with|font-series|bold|
+  (Positivity)>
 
   M2) <math|d<around*|(|x,y|)>=d<around*|(|y\<nocomma\>,x|)>>
-  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (Symmetry)
+  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <with|font-series|bold|
+  (Symmetry)>
 
   M3) <math|d<around*|(|x,y|)>\<leqslant\>d<around*|(|x,z|)>+d<around*|(|z,y|)>
-  > \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (Triangle
-  inequality)
+  > \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <with|font-series|bold|
+  \ (Triangle inequality)>
 
   We call the tuple<math| (X, d)> a metric space.
 
-  <with|font-series|bold|TODO> important metrics in Rn and functions
+  <with|font-series|bold|Examples>
 
-  <with|font-series|bold|TODO> CBS and Holder with proof\ 
+  1) Euclidean metric in <math|\<frak-R\><rsup|n>>
+
+  <\equation*>
+    d<around*|(|x,y|)>=<around*|\||x-y|\|>
+  </equation*>
+
+  2) Euclidean metric in <math|\<frak-R\><rsub|><rsup|n>>
+
+  <\equation*>
+    d<around*|(|x,y|)>=<sqrt|<big|sum><rsup|n><rsub|i=1><around*|(|x<rsub|i>-y<rsub|i>|)><rsup|2>>
+  </equation*>
+
+  3)British rail metric in <math|\<Re\><rsup|n>>
+
+  <\equation*>
+    d<around*|(|x,y|)>=<choice|<tformat|<table|<row|<cell|0,\<nocomma\>>|<cell|x=y>>|<row|<cell|<sqrt|<big|sum><rsub|>x<rsub|i><rsup|2>+<big|sum>y<rsub|i><rsup|2>>,>|<cell|x\<neq\>y>>>>>
+  </equation*>
+
+  4) Discrete metric on any set
+
+  5) <math|d<rsub|\<infty\>>> metric in <math|\<Re\><rsup|n><rsub|>>
+
+  <\equation*>
+    d<around*|(|x,y|)>= max<around*|{|<around*|\||x<rsub|1>-y<rsub|1>|\|>,<around*|\||x<rsub|2>-y<rsub|2>|\|>,\<ldots\><around*|\||x<rsub|n>-y<rsub|n>|\|>|}>
+  </equation*>
+
+  6) Consider the set of bounded functions on <math|<around*|[|a,b|]>>:\ 
+
+  <\equation*>
+    f:<around*|[|a,b|]>\<rightarrow\> R ,\<exists\> K such
+    that<around*|\||f<around*|(|x|)>|\|>\<leqslant\>K
+    \<forall\>x\<in\><around*|[|a,b|]>
+  </equation*>
+
+  Denote this set by <math|B<around*|[|a,b|]>\<nosymbol\>>. Then we define
+  the metric:
+
+  <\equation*>
+    d<rsub|\<infty\>><around*|(|f,g|)>=sup<rsub|x\<in\><around*|[|a,b|]>><around*|\||f<around*|(|x|)>-g<around*|(|x|)>|\|>
+  </equation*>
+
+  Note that the importance of the boundness comes when we are required to
+  prove that the metric is well defined. ie the sup is a number in R, not
+  <math|\<infty\>>.
+
+  7)Consider the set of bounded continous functions on
+  <math|<around*|[|a,b|]>>: <math|C<around*|[|a,b|]>\<subset\>B<around*|[|a,b|]>>
+
+  <\equation*>
+    d<rsub|2><around*|(|f,g|)>= <around*|(|<big|int><rsup|b><rsub|a><around*|(|f<around*|(|x|)>-g<around*|(|x|)>|)><rsup|2>dx|)><rsup|1/2>
+  </equation*>
+
+  8) On <math|C<around*|[|a,b|]>:>
+
+  <\equation*>
+    d<rsub|p><around*|(|f,g|)>= <around*|(|<big|int><rsup|b><rsub|a><around*|\||f<around*|(|x|)>-g<around*|(|x|)>|\|><rsup|p>dx|)><rsup|1/p>
+  </equation*>
+
+  Note that\ 
+
+  <\equation*>
+    d<rsub|1><around*|(|f,g|)>=<big|int><rsup|b><rsub|a><around*|\||f<around*|(|x|)>-g<around*|(|x|)>|\|><rsup|p>dx
+  </equation*>
+
+  is also a metric.
+
+  <with|font-series|bold|Important inequalities>:\ 
+
+  <\equation*>
+    <around*|\||<around*|\||x|\|>-<around*|\||y|\|>|\|>\<leqslant\><around*|\||x-y|\|>
+  </equation*>
+
+  <with|font-series|bold|Cauchy Bunyakovsky Schwarz>:
+
+  In <math|\<frak-R\><rsup|n>>:
+
+  <\equation*>
+    <around*|(|<big|sum><rsup|n><rsub|i=1>x<rsub|i>*y<rsub|i>|)><rsup|2>\<leqslant\><around*|(|<big|sum><rsup|n><rsub|i=1>x<rsub|i><rsup|2>|)>*<around*|(|<big|sum><rsup|n><rsub|i=1>y<rsub|i><rsup|2>|)>
+  </equation*>
+
+  The continous version:
+
+  <\equation*>
+    <around*|(|<big|int><rsup|b><rsub|a>f<around*|(|x|)>*g<around*|(|x|)>|)><rsup|2>\<leqslant\><big|int><rsup|b><rsub|a>f<around*|(|x|)><rsup|2>*<big|int><rsup|b><rsub|a>g<around*|(|x|)><rsup|2>
+  </equation*>
+
+  <with|font-series|bold|Proof>
+
+  <\equation*>
+    <big|int><rsup|b><rsub|a><around*|(|<around*|\<nobracket\>|f<around*|(|x|)>-\<lambda\>*g|(>x|)>
+    <rsup|2>\<geqslant\>0 \<forall\>\<lambda\>\<in\>R
+  </equation*>
+
+  So the discriminant of this equation in <math|\<lambda\> >is
+  <math|\<leqslant\>0\<nosymbol\>>.(As if it is \<gtr\>0, then we will have 2
+  distinct solutions, <math|\<lambda\><rsub|1>> and <math|\<lambda\><rsub|2>>
+  and in between the solutions, the function of <math|\<lambda\> will be
+  negative>).From this we can conclude the inequality.
+
+  <with|font-series|bold|Holder>:
+
+  Take <math|p,q> positive such that <math|<frac|1|p>+<frac|1|q>=1>. Then for
+  any <math|x,y> in <math|\<frak-R\><rsup|n>>:
+
+  <\equation*>
+    <big|sum><rsup|n><rsub|i=1><around*|\||x<rsub|i>*y<rsub|i>|\|>\<leqslant\><around*|(|<big|sum><rsub|i=1><rsup|n><around*|\||x<rsub|i>|\|><rsup|p>|)><rsup|1/p>*<around*|(|<big|sum><rsup|n><rsub|i=1><around*|\||y<rsub|i>|\|><rsup|q>|)><rsup|1/q>
+  </equation*>
+
+  \;
+
+  \;
+
+  <with|font-series|bold|Product metrics>
+
+  <with|font-series|bold|Submetrics>
 
   <with|font-series|bold|Definition>:
 
