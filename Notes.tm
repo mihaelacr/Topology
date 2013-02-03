@@ -31,7 +31,9 @@
 
   We call the tuple<math| (X, d)> a metric space.
 
-  TODO important metrics in Rn and functions
+  <with|font-series|bold|TODO> important metrics in Rn and functions
+
+  <with|font-series|bold|TODO> CBS and Holder with proof\ 
 
   <with|font-series|bold|Definition>:
 
@@ -133,6 +135,8 @@
   metric spaces is continous if for all closed sets <math|U\<subset\>Y>,
 
   <math|f<rsup|><rsub|><rsup|-1><around*|(|U|)>> is closed in X.
+
+  \;
 
   <with|font-series|bold|Definition>:
 
@@ -318,9 +322,81 @@
     diam<around*|(|A|)>=sup<around*|{|d<around*|(|x,y|)>\<nocomma\>,x,y\<in\>X\<nocomma\>|}>
   </equation*>
 
-  \;
+  <with|font-series|bold|Definition:>
 
-  TODO topologically equivalent metrics and Lipschitez equivalent metrics.
+  Metrics <math|d<rsub|1>> and <math|d<rsub|2>> are called
+  <with|font-series|bold|topologically equivalent> if a set if
+  <math|d<rsub|1>> open iff it is <math|d<rsub|2>> open.
+
+  <with|font-series|bold|Definition:>
+
+  Metrics <math|d<rsub|1>> and <math|d<rsub|2>> are called
+  <with|font-series|bold|Lipschitz equivalent> if there exist k, l positive
+  such that, for all x, y in the metric space:
+
+  <\equation*>
+    k*d<rsub|2><around*|(|x,y|)>\<leqslant\>d<rsub|1><around*|(|x,y|)>\<leq\>g
+    \ d<rsub|2><around*|(|x,y|)>\<nocomma\>\<nocomma\>
+  </equation*>
+
+  <with|font-series|bold|Theorem:>
+
+  Lipschitz equivalent metrics are topolically equivalent.\ 
+
+  Proof uses result on open balls which come from the definition of Le.
+
+  <with|font-series|bold|Definition:>
+
+  <math|f:X\<rightarrow\>Y> where <math|X,Y> are metric spaces is called a
+  <with|font-series|bold|homeomorphism> if <math|f> is bijective and both
+  <math|f >and <math|f<rsup|-1>> are continuous.
+
+  <with|font-series|bold|Definition>:
+
+  \ <math|f:X\<rightarrow\>Y> where <math|X,Y> are metric spaces is called a
+  <with|font-series|bold|isomorphism> if for any <math|x<rsub|1>,x<rsub|2>>
+  in X:
+
+  <\equation*>
+    d<rsub|X><around*|(|x<rsub|1>,x<rsub|2>|)>=d<rsub|Y><around*|(|f<around*|(|x<rsub|1>|)>\<nocomma\>,f<around*|(|x<rsub|2>|)>|)>
+  </equation*>
+
+  In case an isomoprpishm exists between metric spaces <math|X> and <math|Y>
+  then the metric spaces are called <with|font-series|bold|isomorphic>.
+
+  <with|font-series|bold|Definition:>
+
+  A map <math|f:X\<rightarrow\>Y> is called a Lpschitz equivalence if <math|f
+  >is bijective and <math|\<exists\> k\<nocomma\>,l> such that:
+
+  <\equation*>
+    k*d<rsub|Y><around*|(|f<around*|(|x<rsub|1>|)>,f<around*|(|x<rsub|2>|)>|)>\<leqslant\>d<rsub|X><around*|(|x<rsub|1>,x<rsub|2>|)>\<leqslant\>l*d<rsub|Y><around*|(|f<around*|(|x<rsub|1>|)>,f<around*|(|x<rsub|2>|)>|)>
+  </equation*>
+
+  If there exists a map <math|f:X\<rightarrow\>Y> which is Lipschitz
+  equivalent, then <math|X> and <math|Y> are called Lipschitz equivalent
+  spaces.
+
+  <with|font-series|bold|Discrete metric>
+
+  <with|font-series|bold|Definition>:
+
+  On any set <math|X> we can define the following metric:
+
+  <\equation*>
+    d<around*|(|x,y|)>=<choice|<tformat|<table|<row|<cell|0\<nocomma\>,>|<cell|x=y>>|<row|<cell|1,>|<cell|x\<neq\>y>>>>>
+  </equation*>
+
+  <with|font-series|bold|Open balls in discrete metric:>
+
+  <\equation*>
+    B<rsub|\<varepsilon\>><around*|(|x|)>=<choice|<tformat|<table|<row|<cell|<around*|{|x|}>\<nocomma\>,>|<cell|\<varepsilon\>\<leqslant\>1>>|<row|<cell|X\<nocomma\>\<nocomma\>\<nocomma\>\<nocomma\>,>|<cell|\<varepsilon\>\<gtr\>1>>>>>
+  </equation*>
+
+  <with|font-series|bold|Remark:>
+
+  In the <with|font-series|bold|discrete metric>, every set is both open and
+  closed.
 </body>
 
 <\initial>
