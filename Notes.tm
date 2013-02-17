@@ -607,7 +607,115 @@
 
   \;
 
+  <doc-data|<doc-title|Topological spaces>>
+
+  <with|font-series|bold|Definition>.
+
+  A <with|font-series|bold|topological space> is a set <math|X>, together
+  with a set of subsets of X, named <math|T>, with <math|T>, satisfying the
+  following conditions
+
+  <\enumerate-numeric>
+    <item><math|\<Phi\>\<in\>T\<nocomma\>,X\<in\>T>
+
+    <item>union of any number of elements of <math|T> is in <math|T>
+
+    <item>intersection of a finite number of elements of <math|T> is in
+    <math|T>
+  </enumerate-numeric>
+
+  <with|font-series|bold|Definition>
+
+  A subset <math|G >of <math|X><with|font-series|bold|> in a topological
+  space <math|<around*|(|X\<nocomma\>\<nocomma\>,T|)>> is called an
+  <with|font-series|bold|open set> if <math|G\<in\>T>.
+
+  <with|font-series|bold|Proposition>
+
+  A set <math|U\<subset\>X> is open iff <math|*\<forall\>x\<in\>U
+  \<nocomma\>> <math|\<exists\>U<rsub|x>\<subset\>U> \ \ <math|U<rsub|x> >
+  open.
+
   \;
+
+  <with|font-series|bold|Examples>
+
+  For any set <math|X>, we define the <with|font-series|bold|discrete
+  topology> <math|<around*|(|X,T|)>> with <math|T >being all subsets of
+  <math|X>.
+
+  For any set <math|X>, we define the <with|font-series|bold|indiscrete
+  topology> <math|<around*|(|X,T|)>> with <math|T
+  =<around*|{|\<Phi\>\<nocomma\>,X|}>><math|>.
+
+  <with|font-series|bold|Cofinite topology>
+
+  We define a topology on a set <math|X> such that a set <math|G >is open if
+  <math|X\<backslash\>G> is finite.
+
+  Note that if X is finite, then the cofinite topology coincides with the
+  discrete topology.
+
+  <with|font-series|bold|Relation between metric spaces and topological
+  spaces>
+
+  Any metric space <math|<around*|(|X,d|)> >is a topological space on the set
+  <math|X>, with the open sets of the topology being the open sets determined
+  by the metric <math|d.>
+
+  If a topological space is determined by a metric, it is called
+  <with|font-series|bold|metrizable>.
+
+  Not any topological space is metrizable.
+
+  Note that a metric space determines the topology on a set, but it does not
+  have to be a unique metric that determines the open sets. Topologically
+  equivalent metrics determine the same topology on a set.
+
+  <with|font-series|bold|Coarser topologies>
+
+  If <math|<around*|(|X,\<nocomma\>T<rsub|1>|)>> and
+  <math|<around*|(|X,\<nocomma\>T<rsub|2>|)>> are topologies on <math|X>, we
+  say that <math|T<rsub|1>> is <with|font-series|bold|coarser> (weaker) if
+  <math|T<rsub|1>\<subseteq\>T<rsub|2>.> Then <math|T<rsub|2> is said> to be
+  <with|font-series|bold|finer> that <math|T<rsub|1>>.
+
+  Note that the set of topologies on a set <math|X> forms a partial order.
+
+  <with|font-series|bold|Sierpinsky topology>
+
+  On a set <math|A=<around*|{|a,b|}>> we define the Sierpinsky topology to be
+  <math|T<rsub|A>=<around*|{|\<Phi\>,A,<around*|{|a|}>|}>>.
+
+  <with|font-series|bold|Continuity in topological spaces>
+
+  <with|font-series|bold|Definition>
+
+  A function <math|f:X\<longrightarrow\>Y> (where <math|X and Y are
+  topological spaces >) is said to be <with|font-series|bold|continous> at
+  <math|a >(<math|\<in\>X>)if for any open set <math|G<rsub|Y>> such that
+  <math|f<around*|(|a|)>\<in\>G<rsub|Y>> <math|\<exists\>> <math|G<rsub|X>
+  >open such that <math|a\<in\>G<rsub|X>> and
+  <math|f<around*|(|G<rsub|X>|)>\<subset\>G<rsub|Y>>.
+
+  A function is said to be continous if it is continous at any point of X.
+
+  <with|font-series|bold|Proposition>
+
+  A function <math|f:X\<longrightarrow\>Y>is continous iff for any <math|V
+  >open in Y <math|f<rsup|1>>(V) is open in X.
+
+  <with|font-series|bold|Bases>
+
+  \;
+
+  <\with|font-series|bold>
+    Definition
+  </with>
+
+  A subset <math|F> of <math|X> is a topological space
+  <math|<around*|(|X\<nocomma\>\<nocomma\>,T|)>> is called a
+  <with|font-series|bold|closed> if <math|X\<backslash\>F\<in\>T>.
 </body>
 
 <\initial>
