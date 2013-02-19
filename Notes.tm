@@ -378,7 +378,7 @@
 
   Proof of the latter sentence (ie deduction from definition).\ 
 
-  Proof by contradiction: Assume that for all balls
+  <with|font-series|bold|Proof by contradiction>: Assume that for all balls
   <math|B<rprime|'>\<subset\>B\<nocomma\>> <math|B<rprime|'>\<cap\>V
   \<neq\>\<Phi\>>.\ 
 
@@ -703,9 +703,17 @@
   <with|font-series|bold|Proposition>
 
   A function <math|f:X\<longrightarrow\>Y>is continous iff for any <math|V
-  >open in Y <math|f<rsup|1>>(V) is open in X.
+  >open in Y <math|f<rsup|-1>>(V) is open in X.
+
+  <with|font-series|bold|Proposition>
+
+  If <math|f:X\<longrightarrow\>Y> and <math|g:Y\<rightarrow\>Z> are
+  continous then <math|g\<circ\>f:X\<rightarrow\>Z> is continous (with
+  <math|X> and <math|Z> keeping their respective topologies).
 
   <with|font-series|bold|Bases>
+
+  <with|font-series|bold|Definition>
 
   \;
 
@@ -716,6 +724,24 @@
   A subset <math|F> of <math|X> is a topological space
   <math|<around*|(|X\<nocomma\>\<nocomma\>,T|)>> is called a
   <with|font-series|bold|closed> if <math|X\<backslash\>F\<in\>T>.
+
+  \;
+
+  \;
+
+  \;
+
+  <with|font-series|bold|Similarities between connected and compact spaces>
+
+  If <math|f:X\<rightarrow\>Y> continous with <math|X
+  ><with|font-series|bold|connected>. Then <math|f<around*|(|X|)> >is
+  <with|font-series|bold|connected>.<with|font-series|bold|>
+
+  If <math|f:X\<rightarrow\>Y> continous with <math|X
+  ><with|font-series|bold|compact>. \ \ Then <math|f<around*|(|X|)> >is
+  <with|font-series|bold|compact>.
+
+  \;
 </body>
 
 <\initial>
