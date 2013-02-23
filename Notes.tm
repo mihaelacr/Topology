@@ -574,36 +574,7 @@
 
   \;
 
-  <with|font-series|bold|Function properties used in the course>
-
-  Let <math|f: X\<rightarrow\>Y> and <math|A,B\<subset\>X>,
-  <math|C,D\<subset\>Y>
-
-  Then:
-
-  <\equation*>
-    f<around*|(|A\<cup\>B|)>=f<around*|(|A|)>\<cup\>f<around*|(|B|)>
-  </equation*>
-
-  <\equation*>
-    f<around*|(|A\<cap\>B|)>\<subset\>f<around*|(|A|)>\<cap\>f<around*|(|B|)>
-  </equation*>
-
-  <\equation*>
-    f<rsup|-1><around*|(|C\<cap\>D|)>=f<rsup|-1><around*|(|C|)>\<cap\>f<rsup|-1><around*|(|D|)>
-  </equation*>
-
-  <\equation*>
-    f<rsup|-1><around*|(|C\<cup\>D|)>=f<rsup|-1><around*|(|C|)>\<cup\>f<rsup|-1><around*|(|D|)>
-  </equation*>
-
-  <\equation*>
-    f<around*|(|A\<backslash\>B|)>\<supset\>f<around*|(|A|)>\<backslash\>f<around*|(|B|)>
-  </equation*>
-
-  <\equation*>
-    f<rsup|-1><around*|(|Y\<backslash\>A|)>=X\<backslash\>f<rsup|-1><around*|(|A|)>
-  </equation*>
+  \;
 
   \;
 
@@ -725,9 +696,186 @@
   <math|<around*|(|X\<nocomma\>\<nocomma\>,T|)>> is called a
   <with|font-series|bold|closed> if <math|X\<backslash\>F\<in\>T>.
 
+  <\with|font-series|bold>
+    Proposition
+  </with>
+
+  \ If <math|V> is closed in <math|X> and <math|A> is a subspace of <math|X>
+  then <math|V\<cap\>A >is closed in A.
+
+  <with|font-series|bold|Proposition>
+
+  If <math|V> is closed in <math|A> and <math|A> is closed in<math| X>, then
+  <math|V> is closed in X.
+
+  If <math|V> is open in <math|A> and <math|A> is open in<math| X>, then
+  <math|V> is open in X.
+
+  <with|font-series|bold|Definition>
+
+  A space is called <math|><with|font-series|bold|second countable> if it has
+  a countable basis.
+
+  <with|font-series|bold|First countable>
+
   \;
 
   \;
+
+  <with|font-series|bold|Connected spaces>
+
+  <with|font-series|bold|Definition>
+
+  Open sets <math|B> and <math|C> are said to form a
+  <with|font-series|bold|partition> of a metric space <math|X> is
+  <math|B\<cap\>C=\<Phi\>\<nocomma\>>, <math|B\<cup\>C=X>.
+
+  <with|font-series|bold|Definition>
+
+  A topological space <math|X> is called <with|font-series|bold|connected> if
+  it has no partition.
+
+  <with|font-series|bold|Definition> (alternative definition, they are
+  equivalent)
+
+  A topological space is called connected if there exists no
+  <with|font-series|bold|onto> <with|font-series|bold|continous> function
+  <math|f:X\<rightarrow\><around*|{|0,1|}>>
+
+  where on <math|<around*|{|0,1|}>> we consider the discrete topology.
+
+  <with|font-series|bold|Proposition>
+
+  A space is connected if and only if the only sets which are both open and
+  closed are itself and <math|\<Phi\>>.
+
+  <with|font-series|bold|Definition>
+
+  We call a subset of a space <math|X> connected if the subspace induced by
+  <math|X> on it is connected.
+
+  <with|font-series|bold|Proposition>
+
+  If <math|A> is connected and <math|A\<subset\>B\<subset\><wide|A|\<bar\>>>,
+  then <math|B >is connected.
+
+  <with|font-series|bold|Proposition>
+
+  Let <math|<around*|{|A<rsub|i>:i\<in\>I|}>> a indexed faimlly of connected
+  subsets of a topological space <math|X such >that
+  <math|A<rsub|i>\<cap\>A<rsub|j>\<neq\>\<Phi\>>
+
+  for any <math|i,j\<in\>I>. Then <math|\<cup\>A<rsub|i>> is connected.
+
+  <with|font-series|bold|Proposition>
+
+  Let <math|<around*|{|A<rsub|i>:i\<in\>I|}>> a indexed faimlly of connected
+  subsets of a topological space <math|X and C>
+  <with|font-series|bold|connected> such that
+  <math|C\<cap\>B<rsub|i>\<neq\>\<Phi\>\<nocomma\>>
+  <math|\<forall\>i\<in\>I>. <math|Then B\<cup\><around*|(|\<cup\>C<rsub|i>|)>
+  is connected.>
+
+  <with|font-series|bold|Theorem>
+
+  Any connected subspace of <math|R> is an interval.
+
+  <with|font-series|bold|Compact spaces>
+
+  <with|font-series|bold|Definition>
+
+  A system <math|<around*|{|U<rsub|\<alpha\>> |}>>of subsets of <math|X> is
+  called a <with|font-series|bold|cover> for a set <math|S\<subset\>X> if
+  <math|*\<cup\>U<rsub|\<alpha\>>\<supset\>S>.
+
+  A cover is called an <with|font-series|bold|open cover> if every set in the
+  cover is open (i.e. <math|U<rsub|\<alpha\>>> is open for every
+  <math|\<alpha\>>)
+
+  A system <around*|{|<math|U<rsub|\<beta\>>>|}> of sets is called a subcover
+  of a system <math|<around*|{|U<rsub|\<alpha\>>|}>> for <math|S>, if it
+  covers <math|S> and every element of it is an element of
+  <math|<around*|{|U<rsub|\<alpha\>>|}>.>
+
+  A cover is called finite if it has a finite number of elements.
+
+  <with|font-series|bold|Definition>
+
+  A set in a topological space is called <with|font-series|bold|compact> if
+  every open cover for it has a finite subcover.
+
+  <with|font-series|bold|Definition>
+
+  We call a system of sets centered if the intersection of any finite subset
+  of it is non-empty.
+
+  (ie. Given <math|<around*|{|V<rsub|\<alpha\>>|}>> a system of sets with
+  <math|\<alpha\>\<in\>I\<nocomma\>>, <math|I> indexing set
+  <math|\<rightarrow\>> <math|\<forall\>J\<subset\>I,J finite
+  <big|cap><rsub|j\<in\>J>V<rsub|j>\<neq\>\<Phi\>>.
+
+  <with|font-series|bold|Theorem.>
+
+  A set is <with|font-series|bold|compact> iff every
+  <with|font-series|bold|centered system of closed sets> has a non empty
+  intersection.
+
+  <with|font-series|bold|Theorem>
+
+  Any infinite set in a compact space has a limit point.
+
+  <with|font-series|bold|Theorem>
+
+  Any compact set in a metric space is bounded.
+
+  <with|font-series|bold|Theorem>
+
+  A closed set in a compact space is compact.
+
+  <with|font-series|bold|Theorem>
+
+  A compact set in a <with|font-series|bold|Hausdorff> space is closed.
+
+  <with|font-series|bold|Theorem> (<with|font-series|bold|Heine Borel>)
+
+  A closed and bounded subset of <math|R<rsup|n>> is compact.
+
+  <with|font-series|bold|Theorem>
+
+  In a <with|font-series|bold|Hausdorff> space, the intersection of two
+  compact spaces is compact.
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  <with|font-series|bold|Proposition>
+
+  <with|font-series|bold|A compact set in a Hausdorff space is closed.>
+
+  <with|font-series|bold|Proposition>
+
+  <with|font-series|bold|Any closed set in a compact space is compact.>
 
   \;
 
@@ -741,7 +889,47 @@
   ><with|font-series|bold|compact>. \ \ Then <math|f<around*|(|X|)> >is
   <with|font-series|bold|compact>.
 
+  <with|font-series|bold|Relation with Hausdorff>
+
+  Let <math|f:X\<rightarrow\> Y> continous and injective. Then if <math|Y> is
+  Hausdorff then <math|X> is Hausdorff.
+
   \;
+
+  \;
+
+  \;
+
+  <with|font-series|bold|Function properties used in the course>
+
+  Let <math|f: X\<rightarrow\>Y> and <math|A,B\<subset\>X>,
+  <math|C,D\<subset\>Y>
+
+  Then:
+
+  <\equation*>
+    f<around*|(|A\<cup\>B|)>=f<around*|(|A|)>\<cup\>f<around*|(|B|)>
+  </equation*>
+
+  <\equation*>
+    f<around*|(|A\<cap\>B|)>\<subset\>f<around*|(|A|)>\<cap\>f<around*|(|B|)>
+  </equation*>
+
+  <\equation*>
+    f<rsup|-1><around*|(|C\<cap\>D|)>=f<rsup|-1><around*|(|C|)>\<cap\>f<rsup|-1><around*|(|D|)>
+  </equation*>
+
+  <\equation*>
+    f<rsup|-1><around*|(|C\<cup\>D|)>=f<rsup|-1><around*|(|C|)>\<cup\>f<rsup|-1><around*|(|D|)>
+  </equation*>
+
+  <\equation*>
+    f<around*|(|A\<backslash\>B|)>\<supset\>f<around*|(|A|)>\<backslash\>f<around*|(|B|)>
+  </equation*>
+
+  <\equation*>
+    f<rsup|-1><around*|(|Y\<backslash\>A|)>=X\<backslash\>f<rsup|-1><around*|(|A|)>
+  </equation*>
 </body>
 
 <\initial>
