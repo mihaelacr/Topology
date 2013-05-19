@@ -1,4 +1,4 @@
-<TeXmacs|1.0.7.14>
+<TeXmacs|1.0.7.19>
 
 <style|generic>
 
@@ -719,6 +719,58 @@
   <with|font-series|bold|First countable>
 
   \;
+
+  \;
+
+  <with|font-series|bold|Hausdorff spaces>
+
+  <with|font-series|bold|Definition>
+
+  \ \ A topological space <math|X> is Hausdorff if for any <math|x and y> in
+  <math|X> <math|\<exists\>> <math|U<rsub|x> and U<rsub|y>> open such that
+  <math|x\<in\>U<rsub|x>> and <math|y\<in\>U<rsub|y> > and
+  <math|U<rsub|x>\<cap\>U<rsub|y>=\<Phi\>>
+
+  <with|font-series|bold|Example>
+
+  \ Every metric space is Hausdorff.
+
+  \ \ A infinite space with the cofinite topology is not Hausdorff.
+
+  <with|font-series|bold|Definition>
+
+  \ <with|font-series|bold|Convergence in a topological space>
+
+  \ \ A sequence <math|x<rsub|n> converges to a point> <math|x> in <math|X>
+  if for any open set that contains <math|x> exists <math|N> such that
+  <math|\<forall\>n\<gtr\>N> <math|x<rsub|n> is contained in that open set.>
+
+  Note that convergence in a topological space does not gurantee uniqness.
+
+  <with|font-series|bold|Example>
+
+  In an indiscrete space, any sequence tends to any point in <math|X.> That
+  is because the only open sets are <math|\<Phi\>> and<math|X> and for any
+  point <math|x> and open set that contains <math|x <around*|(|ie X|)> >any
+  sequence in <math|X> is contained in <math|X> so hence <math|x<rsub|n>
+  >tends to <math|x>.
+
+  <with|font-series|bold|Theorem>
+
+  \ In a Hausdorff space the limit of a sequence is unique.
+
+  <with|font-series|bold|Theorem>
+
+  <math|X \<times\>Y> is Hausdorff iff <math|X> and <math|Y > are Hausdorff
+
+  <with|font-series|bold|Theorem>
+
+  <math|f:X\<rightarrow\>Y> is injective and <math|Y> is Hausdorff, then
+  <math|X> is Hausdorff
+
+  <with|font-series|bold|Corollary>
+
+  Hausdorffness is a topological property.
 
   \;
 
