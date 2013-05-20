@@ -791,11 +791,33 @@
 
   <with|font-series|bold|Definition>: Regular space
 
-  \;
+  A space is called<with|font-series|bold| regular >if for any point
+  <math|x\<in\>X> and closed set <math|V\<subset\>X> such that
+  <math|x\<nin\>V> there exists
+
+  2 open sets in <math|X>, <math|O<rsub|x>> and <math|O<rsub|V>> such that
+  <math|x\<in\>O<rsub|x>> and <math|V\<subset\>O<rsub|V>> and
+  <math|O<rsub|x>\<cap\>O<rsub|v>=\<Phi\>>.
 
   <with|font-series|bold|Definition>: Normal space
 
+  A space is called<with|font-series|bold| normal> if for any 2 closed sets
+  in <math|X>, <math|V<rsub|1> and V<rsub|2> >such that
+  <math|V<rsub|1>\<cap\>V<rsub|2>=\<phi\>> there exist\ 
+
+  open sets <math|O<rsub|V<rsub|1>>> and <math|O<rsub|V<rsub|2>>> such that
+  <math|V<rsub|1>\<subset\>O<rsub|V<rsub|1>>> and
+  <math|V<rsub|2>\<subset\>O<rsub|V<rsub|2>>> and
+  <math|O<rsub|V<rsub|1>>\<cap\>O<rsub|V<rsub|2>>=\<phi\>>.
+
   \;
+
+  Can you deduce that any normal space is regular and any regular space is
+  Hausdorff?
+
+  <with|font-series|bold|Theorem>
+
+  Any compact Hausdorff space is regular and normal.
 
   <with|font-series|bold|Connected spaces>
 
@@ -853,7 +875,12 @@
 
   <with|font-series|bold|Theorem>
 
-  Any connected subspace of <math|R> is an interval.
+  Any connected subspace of <math|R> is an interval. And an interval in R is
+  connected.
+
+  <with|font-series|bold|Path connectedness>
+
+  \;
 
   <with|font-series|bold|Compact spaces>
 
@@ -919,6 +946,12 @@
 
   In a <with|font-series|bold|Hausdorff> space, the intersection of two
   compact spaces is compact.
+
+  <with|font-series|bold|Theorem>
+
+  If <math|X> is a compact space and <math|Y> is a Hausdorff space and there
+  exists <math|f:X\<rightarrow\>Y> continous and bijective, then <math|f> is
+  a homeomorphism.
 
   \;
 
