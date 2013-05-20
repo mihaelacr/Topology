@@ -1055,7 +1055,8 @@
   A space is said to be path connected if \ for any 2 points in <math|X>
   there is a path between them.
 
-  <with|font-series|bold|Theorem>: Tranzitivity of paths
+  <with|font-series|bold|Theorem>: <with|font-series|bold|Tranzitivity of
+  paths>
 
   If <math|f:<around*|[|0,1|]>\<rightarrow\> X> is a path from <math|x> to
   <math|y> and <math|g:<around*|[|0,1|]>\<rightarrow\> X> is a path from
@@ -1071,11 +1072,28 @@
 
   <with|font-series|bold|Theorem>
 
-  Any open ball in <math|R<rsub|n>> is path connected
+  Any open ball in <math|R<rsub|n>> is path connected. This is proven by
+  translating the ball to a ball centered in the origin of the space with
+  radius 1. This preserves path connectedness. Take <math|a\<in\>B> and
+  <math|b\<in\>B> then define <math|f:<around*|[|0,1|]>\<rightarrow\> B>
+  <math|f<around*|(|t|)>= <around*|(|1 -t|)>*a \<noplus\>+t b>,
+  <math|f<around*|(|0|)>=a\<nocomma\>> <math|f<around*|(|1|)>=b>. This is
+  obviously continous and the only thing left to prove is that
+  <math|f<around*|(|<around*|[|0,1|]>|)> \<subset\>B>.
+
+  <with|font-series|bold|Note>\ 
+
+  Using conntectedness is a good way of proving spaces are not homeomorphic.
+  For example <math|R <around*|\\||{>0<around*|}| and
+  R<rsup|2><around*|\\||{>0|}>> are not homeomorphic. If they were then
+  <math|R <around*|\\||{>0<around*|}||\<nobracket\>>> would be conntected, as
+  <math|R<rsup|2><around*|\\||{>0<around*|}||\<nobracket\>>> is path
+  connected. But <math|R <around*|\\||{>0<around*|}||\<nobracket\>>> is not
+  conntected as it is not an interval.
 
   <with|font-series|bold|Theorem>
 
-  Any open and connected subset of <math|R<rsub|n> >is path connected.
+  Any open and connected subset of <math|R<rsub|n> >is path connected.\ 
 
   <with|font-series|bold|Compact spaces>
 
