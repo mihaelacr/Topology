@@ -835,7 +835,43 @@
   Let <math|f:X<rsub|>\<rightarrow\> Y> be a continous function. Then
   <math|X> and <math|G<rsub|f>> are homeomorphic.
 
-  \;
+  <with|font-series|bold|IMPORTANT>
+
+  Example of a closed set in <math|R*\<times\>R> that does not have a closed
+  projection in <math|R >is (x, 1/x) with <math|x\<neq\>0> x<math|\<in\>R>.
+
+  <with|font-series|bold|Closure in toplogical spaces>
+
+  A point <math|x> is a point of closure for a set <math|A> if for any open
+  set <math|O> in the topological space <math|X> such that <math|x\<in\>O>,
+  <math|O\<cap\>A\<neq\>\<phi\>>.
+
+  <with|font-series|bold|Interior>
+
+  A point <math|x> in a set <math|A> is said to be part of the interior of
+  <math|A> if there exists an open set <math|U> such that <math|x\<in\>U> and
+  <math|U\<subset\>A.>
+
+  Note that all the properties of closure and interior as well as boundary
+  from metric spaces are preserved to topological spaces.
+
+  <with|font-series|bold|Proposition>
+
+  A map <math|f:X\<rightarrow\> Y> is continuous if and only if
+  <math|f<around*|(|<wide|A|\<bar\>>|)>\<subset\><wide|f<around*|(|A|)>|\<bar\>>
+  for every A\<subset\>X.>
+
+  <with|font-series|bold|Definition>
+
+  Two spaces are homemorfic if and only if<math|\<exists\> f:X\<rightarrow\>
+  Y> continous and bijective such that <math|f<rsup|-1>> is also continous.
+
+  Example: Any 2 open intervals in <math|R> are homeomorphic. (-1,1) and
+  <math|R> are homeomorphic (<math|f<around*|(|x|)>=
+  <frac|x|1-\|x<around*|\|||\<nobracket\>>>>) gives the homeomorphism.
+
+  Note that most of the properties studies: compactness, completness,
+  hausdorfness and connectedness are homemorphic properties.
 
   \;
 
@@ -915,7 +951,10 @@
   <math|V<rsub|2>\<subset\>O<rsub|V<rsub|2>>> and
   <math|O<rsub|V<rsub|1>>\<cap\>O<rsub|V<rsub|2>>=\<phi\>>.
 
-  \;
+  <with|font-series|bold|Theorem>
+
+  <math|X\<times\>Y> is Hausdorff if and only if <math|X> and <math|Y > are
+  both Hausdorff.
 
   Can you deduce that any normal space is regular and any regular space is
   Hausdorff?
@@ -946,7 +985,8 @@
   <with|font-series|bold|onto> <with|font-series|bold|continous> function
   <math|f:X\<rightarrow\><around*|{|0,1|}>>
 
-  where on <math|<around*|{|0,1|}>> we consider the discrete topology.
+  where on <math|<around*|{|0,1|}>> we consider<with|font-series|bold| the
+  discrete topology>.
 
   <with|font-series|bold|Proposition>
 
@@ -960,8 +1000,8 @@
 
   <with|font-series|bold|Proposition>
 
-  If <math|A> is connected and <math|A\<subset\>B\<subset\><wide|A|\<bar\>>>,
-  then <math|B >is connected.
+  <with|font-shape|italic|If <math|A> is connected and
+  <math|A\<subset\>B\<subset\><wide|A|\<bar\>>>, then <math|B >is connected.>
 
   <with|font-series|bold|Proposition>
 
@@ -985,9 +1025,57 @@
   Any connected subspace of <math|R> is an interval. And an interval in R is
   connected.
 
+  <with|font-series|bold|Theorem>
+
+  Let <math|f:X\<rightarrow\>Y> be a continous function and <math|X> be
+  conntected. Then <math|f<around*|(|X|)> >is connected.
+
+  From this we get the intermediate value theorem:
+
+  If <math|f:<around*|[|a,b|]>\<rightarrow\>R> is continous, then
+  <math|f<around*|(|<around*|[|a,b|]>|)>> is connected in <math|R>, so it is
+  an interval, hence it satifies the intermediate value theorem.
+
+  <with|font-series|bold|Theorem>
+
+  <math|X\<times\>Y> is path conncted if and only if <math|X> and <math|Y >
+  are both conntected.
+
   <with|font-series|bold|Path connectedness>
 
-  \;
+  <with|font-series|bold|Definition>
+
+  Given a topological space <math|<around*|(|X,T|)>> we say
+  <math|f:<around*|[|0,1|]>\<rightarrow\> X> is a path from <math|x> to
+  <math|y >if <math|f> is continous and <math|f<around*|(|0|)>= x> and
+  <math|f<around*|(|1|)>=y>.
+
+  <with|font-series|bold|Defintion>
+
+  A space is said to be path connected if \ for any 2 points in <math|X>
+  there is a path between them.
+
+  <with|font-series|bold|Theorem>: Tranzitivity of paths
+
+  If <math|f:<around*|[|0,1|]>\<rightarrow\> X> is a path from <math|x> to
+  <math|y> and <math|g:<around*|[|0,1|]>\<rightarrow\> X> is a path from
+  <math|y> to <math|z>, then we can construct a path from <math|x> to z
+
+  <\equation*>
+    h<around*|(|t|)>=<choice|<tformat|<table|<row|<cell|f<around*|(|2t|)>\<nocomma\>\<nocomma\>\<nocomma\>,t\<in\><around*|[|0,1/2|]>,>>|<row|<cell|g<around*|(|1-2t|)>,\<nocomma\>t\<in\><around*|[|1/2,1|]>>>>>>
+  </equation*>
+
+  <with|font-series|bold|Theorem>
+
+  Any path connected space is connected.
+
+  <with|font-series|bold|Theorem>
+
+  Any open ball in <math|R<rsub|n>> is path connected
+
+  <with|font-series|bold|Theorem>
+
+  Any open and connected subset of <math|R<rsub|n> >is path connected.
 
   <with|font-series|bold|Compact spaces>
 
@@ -1098,7 +1186,7 @@
 
   \;
 
-  <with|font-series|bold|Similarities between connected and compact spaces>
+  <with|font-series|bold|Topologically invariant properites>
 
   If <math|f:X\<rightarrow\>Y> continous with <math|X
   ><with|font-series|bold|connected>. Then <math|f<around*|(|X|)> >is
@@ -1107,6 +1195,10 @@
   If <math|f:X\<rightarrow\>Y> continous with <math|X
   ><with|font-series|bold|compact>. \ \ Then <math|f<around*|(|X|)> >is
   <with|font-series|bold|compact>.
+
+  If <math|f:X\<rightarrow\>Y<rsub|>> continous and <math|X> is
+  <with|font-series|bold|complte,> then <math|f<around*|(|X|)>> is
+  <with|font-series|bold|complete>.
 
   <with|font-series|bold|Relation with Hausdorff>
 
@@ -1123,7 +1215,7 @@
 
   \;
 
-  \;
+  <with|font-series|bold|Special cases for <math|R<rsup|n>>>
 
   <with|font-series|bold|Function properties used in the course>
 
