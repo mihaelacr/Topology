@@ -682,6 +682,18 @@
   continous then <math|g\<circ\>f:X\<rightarrow\>Z> is continous (with
   <math|X> and <math|Z> keeping their respective topologies).
 
+  <with|font-series|bold|Tip>
+
+  A simple way to prove something is not closed in a metric space is to find
+  a sequence included in the metric space that does has a limit which is not
+  in the subset.
+
+  <with|font-series|bold|Important for examples>
+
+  Any function to the indiscrete topology is continous.
+
+  Any function from the discrete topology is continous.
+
   <with|font-series|bold|Bases>
 
   <with|font-series|bold|Definition>
@@ -726,10 +738,10 @@
 
   <with|font-series|bold|Definition>
 
-  \ \ A topological space <math|X> is Hausdorff if for any <math|x and y> in
-  <math|X> <math|\<exists\>> <math|U<rsub|x> and U<rsub|y>> open such that
-  <math|x\<in\>U<rsub|x>> and <math|y\<in\>U<rsub|y> > and
-  <math|U<rsub|x>\<cap\>U<rsub|y>=\<Phi\>>
+  \ \ A topological space <math|X> is Hausdorff if for any <math|x and y> and
+  <math|x\<neq\>y> in <math|X> <math|\<exists\>> <math|U<rsub|x> and
+  U<rsub|y>> open such that <math|x\<in\>U<rsub|x>> and
+  <math|y\<in\>U<rsub|y> > and <math|U<rsub|x>\<cap\>U<rsub|y>=\<Phi\>>
 
   <with|font-series|bold|Example>
 
@@ -771,6 +783,17 @@
   <with|font-series|bold|Corollary>
 
   Hausdorffness is a topological property.
+
+  <with|font-series|bold|Theorem>
+
+  In a Hausdorff space, every singleton set is closed. This leads to the fact
+  that in a Hausdorff space and finite subset of the space is closed.
+
+  <with|font-series|bold|Definition>: Regular space
+
+  \;
+
+  <with|font-series|bold|Definition>: Normal space
 
   \;
 
