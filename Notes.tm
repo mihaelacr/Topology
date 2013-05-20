@@ -698,7 +698,15 @@
 
   <with|font-series|bold|Definition>
 
-  \;
+  Given a space (<math|X\<nocomma\>\<nocomma\>,T>), a set <math|B\<subset\>T>
+  is called a basis for <math|T> if any open set in <math|T> can be written
+  as unin of elements of <math|B.>
+
+  <with|font-series|bold|Theorem>
+
+  If <math|f:X\<rightarrow\> Y> and <math|B> is a basis for <math|Y> then it
+  is enough to prove that <math|f<rsup|-1><around*|(|B<rsub|i>|)>> is open
+  <math|\<forall\>B<rsub|i>\<in\>B>.
 
   <\with|font-series|bold>
     Definition
@@ -728,7 +736,104 @@
   A space is called <math|><with|font-series|bold|second countable> if it has
   a countable basis.
 
+  Both <math|R> and <math|R<rsup|2>> are second countable. A countable basis
+  for <math|R<rsup|2>> are the open balls with rational size which are
+  centered at points with both coordinates rational.
+
   <with|font-series|bold|First countable>
+
+  \;
+
+  <with|font-series|bold|Subspaces>
+
+  <with|font-series|bold|Definition>
+
+  Given a topological space <math|<around*|(|X,T|)>> and <math|A\<subset\>X>,
+  then <math|T> induces a topology on <math|A\<nocomma\>,> as follows: A set
+  <math|O<rsub|A>> is open in <math|A> if and only if <math|\<exists\> O
+  \<in\>T> such that <math|O<rsub|A>=O\<cap\>A>.
+
+  <with|font-series|bold|Theorem>
+
+  With the induced topology the function <math|i:A\<rightarrow\> X >
+  \ <math|i<around*|(|a|)>=a> is continous.
+
+  <with|font-series|bold|Theorem>
+
+  Given a function <math|g: Z\<rightarrow\> A>, <math|g> is continous if and
+  only if <math|i \<circ\>g : Z\<rightarrow\> X> is continous., given the
+  induced topology on <math|A.>
+
+  <with|font-series|bold|Theorem>
+
+  The induced topology is the only topology that satisfies the above theorem
+  for any function <math|g.>
+
+  (In order to prove this consider a topology <math|T<rprime|'>> on <math|A>
+  that satisfies this and take : 1) <math|g> to be the identity function from
+  the <math|T to T<rprime|'>> (on <math|A>). 2). <math|g> to be the identity
+  function from <math|T<rprime|'> to T> on A.
+
+  <with|font-series|bold|Theorem>
+
+  If <math|A\<subset\>B> and they are both subsets of a space
+  <math|<around*|(|X,T|)>,> then the topology induced on <math|A> by
+  <math|X>, is the same as the topology induced on <math|A> by <math|B.>
+
+  <with|font-series|bold|Theorem>
+
+  If <math|f:X\<rightarrow\>Y> is continous then the restirction of <math|f>
+  to a subset <math|A> of <math|X> with the induced topology is continous.\ 
+
+  <with|font-series|bold|Product spaces>
+
+  <with|font-series|bold|Definition>
+
+  \ Given spaces <math|<around*|(|X,T<rsub|X>|)>and<around*|(|Y,T<rsub|Y>|)>
+  >we define the product topology to be\ 
+
+  <\equation*>
+    <around*|{|U <around*|\|| U = \<cup\>U<rsub|X>\<times\>U<rsub|Y>|\<nobracket\>>\<nocomma\>\<nocomma\>,where
+    U<rsub|X> and U<rsub|Y> are open in X resp Y|}>
+  </equation*>
+
+  <with|font-series|bold|Note>
+
+  This makes <math|B=<around*|{|U<rsub|X>\<times\>U<rsub|Y>\<nocomma\>\<nocomma\>,where
+  U<rsub|X> and U<rsub|Y> are open in X resp Y|}>> a basis for the product
+  topology.
+
+  <with|font-series|bold|Theorem>
+
+  For metrizable spaces, the product topology \ induced as above is the same
+  as the one induded by the three Lipchitz equivalent metrics discussed.
+
+  <with|font-series|bold|Theorem>
+
+  <math|p<rsub|X>:X \<times\>Y\<rightarrow\> X> defined
+  <math|p<rsub|X><around*|(|x,y|)>=x> is continous.
+
+  <math|p<rsub|Y>:X \<times\>Y\<rightarrow\> Y> defined
+  <math|p<rsub|Y><around*|(|x,y|)>=y> is continous.
+
+  <with|font-series|bold|Theorem>
+
+  <math|f:Z\<rightarrow\> X\<times\>Y> is continous iff
+  <math|p<rsub|X>\<circ\>f> and <math|p<rsub|Y>\<circ\>f> are continous.
+  Note. To prove this use the fact that <math|B> defined above is a basis for
+  the product topology.
+
+  <with|font-series|bold|Theorem>
+
+  Given <math|f:X\<rightarrow\>X<rprime|'>> and <math|g: Y\<rightarrow\>
+  Y<rprime|'>> continous functions then <math|f\<times\>g<around*|(|x,y|)> =
+  <around*|(|f<around*|(|x|)>\<nocomma\>\<nocomma\>,g<around*|(|y|)>|)>> is
+  continous.
+
+  <with|font-series|bold|Theorem>
+
+  Let <math|f:X<rsub|>\<rightarrow\> Y> be a continous function. Then
+  <math|X> and <math|G<rsub|f>> are homeomorphic.
 
   \;
 
@@ -818,6 +923,8 @@
   <with|font-series|bold|Theorem>
 
   Any compact Hausdorff space is regular and normal.
+
+  \;
 
   <with|font-series|bold|Connected spaces>
 
@@ -955,6 +1062,10 @@
 
   \;
 
+  <with|font-series|bold|Sequential compactness>
+
+  \;
+
   \;
 
   \;
@@ -1008,6 +1119,12 @@
 
   \;
 
+  <with|font-series|bold|Comparison between metric and topological spaces>
+
+  \;
+
+  \;
+
   <with|font-series|bold|Function properties used in the course>
 
   Let <math|f: X\<rightarrow\>Y> and <math|A,B\<subset\>X>,
@@ -1042,6 +1159,7 @@
 
 <\initial>
   <\collection>
+    <associate|font-base-size|10>
     <associate|language|british>
   </collection>
 </initial>
