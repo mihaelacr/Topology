@@ -1172,6 +1172,43 @@
 
   \;
 
+  <with|font-series|bold|Definition>
+
+  A set is totally bounded if for any positive <math|\<varepsilon\>> there
+  exists a finite <math|\<varepsilon\>-net.>
+
+  <with|font-series|bold|Theorem>
+
+  Any totally bounded metric space is bounded.
+
+  <with|font-series|bold|Theorem>
+
+  Any bounded space in <math|R<rsub|n>> is totally bounded.
+
+  <\with|font-series|bold>
+    Example
+  </with>
+
+  Not every bounded metric space is totally bounded. Think of <math|R> but
+  with the discrete metric instead of the Euclidean metric. Then <math|R> is
+  bounded as <math|d<around*|(|x,y|)>\<leqslant\>1>,
+  <math|\<forall\>x,y\<in\>R>, but <math|R> is not totally bounded, as given
+  <math|\<varepsilon\>=1/2>, there is no finite <math|\<varepsilon\> net >for
+  <math|R.> Assume there is one, from this we deduce that <math|R >is finite
+  as <math|B<rsub|\<varepsilon\>><around*|(|x|)>=<around*|{|x|}> for
+  \<varepsilon\>\<less\>1>. Then <math|R> is finite as <math|A<rsub|n>> is
+  finite. Contradiction.\ 
+
+  \;
+
+  -- I think that in R_n every bounded space is totally bounded.\ 
+
+  \;
+
+  I think that boundness + completness = totally boundedness.
+
+  \;
+
   \;
 
   \;
