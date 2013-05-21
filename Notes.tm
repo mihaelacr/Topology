@@ -941,6 +941,11 @@
 
   Hausdorffness is a topological property.
 
+  <with|font-series|bold|Note>
+
+  Any finite Hausdorff space must have the discrete topology. (Any set is
+  closed, as union of closed sets).
+
   <with|font-series|bold|Theorem>
 
   In a Hausdorff space, every singleton set is closed. This leads to the fact
@@ -1173,6 +1178,11 @@
 
   <with|font-series|bold|Theorem>
 
+  If<math|f:X\<rightarrow\>Y> is continous, and <math|X> is a compact space,
+  then <math|f> is uniformly continous.
+
+  <with|font-series|bold|Theorem>
+
   In a <with|font-series|bold|Hausdorff> space, the intersection of two
   compact spaces is compact.
 
@@ -1186,7 +1196,9 @@
 
   <with|font-series|bold|Sequential compactness>
 
-  \;
+  <with|font-series|bold|Theorem>
+
+  Any sequencially compact space is totally bounded.
 
   <with|font-series|bold|Definition>
 
