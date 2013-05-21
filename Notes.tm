@@ -924,7 +924,35 @@
   sequence in <math|X> is contained in <math|X> so hence <math|x<rsub|n>
   >tends to <math|x>.
 
+  <with|font-series|bold|Definition>
+
+  A topological space is called first countable if any point <math|x\<in\>X>
+  has a countable definite system of neighbourhoods. A definite system of
+  neighbourhoods of a point <math|x >is a system of open sets <math|R> such
+  that for any open set <math|O> there exists a set <math|G\<in\>R> such that
+  <math|G\<subset\>R.> Note that the elements of the system contain <math|x>.
+
+  <with|font-series|bold|Note>. Any metric space is first countable. The set
+  <math|<around*|{|B<rsub|1/n><around*|(|x|)>,n\<in\>N|}>> forms a definite
+  system for any point <math|x.>
+
   <with|font-series|bold|Theorem>
+
+  In a topological space that is first countable, a point if
+  <math|x\<in\><wide|A|\<bar\>>> then there exists a sequence
+  <math|x<rsub|n>\<subset\>A> such that <math|x<rsub|n>\<rightarrow\>x.>
+  (Note that this is the definition of limit in a topological space, ie for
+  any open set <math|O> such that <math|x\<in\>O> <math|\<exists\>N >such
+  that <math|\<forall\>n\<in\>N> <math|x<rsub|n>\<in\>O>.
+
+  <with|font-series|bold|Example>
+
+  Of a space that is not first countable. The co-finite topology on an
+  uncountable space.
+
+  <\with|font-series|bold>
+    Theorem
+  </with>
 
   \ In a Hausdorff space the limit of a sequence is unique.
 
@@ -1224,9 +1252,12 @@
 
   <with|font-series|bold|Theorem>
 
-  Any totally bounded set is separable.
+  Any totally bounded space is separable.
 
-  (Take <math|M\<in\>N> and the <math|1/M>-net.\ 
+  (Take <math|M\<in\>N> and the <math|1/M>-net be denoted by
+  <math|S<rsub|M>>. Consider <math|S = \<cup\><rsup|\<infty\>><rsub|i=1>S<rsub|i>>
+  . Then <math|S> is countable and any point in the space is part of
+  <math|<wide|S|\<bar\>>>)
 
   <with|font-series|bold|Theorem>
 
@@ -1234,7 +1265,7 @@
 
   <with|font-series|bold|Theorem>
 
-  Any totally bounded and complete space is compact.
+  <with|font-series|bold|Any totally bounded and complete space is compact.>
 
   <with|font-series|bold|Theorem>
 
@@ -1277,11 +1308,21 @@
   points <math|e<rsub|i>> and <math|e<rsub|j>.> So there is no finite net for
   that.
 
-  -- I think that in R_n every bounded space is totally bounded.\ 
+  <\with|font-series|bold>
+    Theorem
+  </with>
+
+  In <math|R<rsub|n>> any bounded space is totally bounded.\ 
+
+  Hint for proof. Consider the open ball that contains the set and define the
+  hypercube that contains that ball with size twice as big as the radius of
+  the ball. Then you can split the hypercube in smaller cubes (each sube can
+  have dim <math|\<varepsilon\>/<sqrt|n >>and take the points that make the
+  cube and see that the open balls centered at those points with radius
+  <math|*\<varepsilon\>> cover the set, so they edge points form a finite
+  <math|\<varepsilon\>> -net.
 
   \;
-
-  I think that boundness + completness = totally boundedness.
 
   \;
 
@@ -1347,6 +1388,14 @@
   \;
 
   <with|font-series|bold|Special cases for <math|R<rsup|n>>>
+
+  \;
+
+  <with|font-series|bold|Important types of topological spaces>
+
+  <with|font-series|bold|Definition>
+
+  \;
 
   <with|font-series|bold|Function properties used in the course>
 
