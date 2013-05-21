@@ -889,7 +889,14 @@
   Note that most of the properties studies: compactness, completness,
   hausdorfness and connectedness are homemorphic properties.
 
-  \;
+  <with|font-series|bold|Definition: Isolated point>
+
+  Let <math|X> be a topological space and <math|S >a subspace. Then
+  <math|x\<in\>S> is called an isolated point of <math|x> if there exists an
+  open set <math|O> of <math|X> such that <math|x> is the only point of
+  <math|S> in <math|O>. Ie . <math|S\<cap\>O=<around*|{|x|}>>.
+
+  \ 
 
   <with|font-series|bold|Hausdorff spaces>
 
@@ -948,7 +955,7 @@
   <with|font-series|bold|Note.> They key part of the above theorem is to use
   the fact that you can impose an ordering on the sets which form the system
   of definite neighbourhoods. As if <math|G<rsub|i>\<nsubset\>G<rsub|i+1>
-  make G<rsub|i>=\<cap\><rsup|i+1><rsub|j=0>G<rsub|j>>
+  make G<rsub|i>=G<rsub|i>\<cap\>G<rsub|i+1>>.
 
   <with|font-series|bold|Example>
 
@@ -1082,6 +1089,19 @@
 
   Any connected subspace of <math|R> is an interval. And an interval in R is
   connected.
+
+  <with|font-series|bold|Example>
+
+  <math|C<rsub|\<infty\>><around*|(|<around*|[|0,1|]>|)>> is path connected
+  hence conntected. A path from <math|f<rsub|1>> to <math|f<rsub|2>> is
+  <math|g<around*|(|t|)> = <around*|(|1-t|)>f<rsub|1> \<noplus\>+t*f<rsub|2>>
+
+  <with|font-series|bold|Example>
+
+  A circle and an interval are not homeomorphic. If they were homeomoprphic
+  then the interval without a point would be homeomorphic with the circle
+  without a point. But if you take out the middle of the interval, what is
+  left is not connected, bu the circle without a point is connected.
 
   <with|font-series|bold|Theorem>
 
@@ -1402,7 +1422,15 @@
 
   <with|font-series|bold|Important types of topological spaces>
 
-  <with|font-series|bold|Definition>
+  <with|font-series|bold|Definition: Separable space>
+
+  \;
+
+  <with|font-series|bold|Definition: Second countable space>
+
+  \;
+
+  <with|font-series|bold|Definition: First countable space>
 
   \;
 
