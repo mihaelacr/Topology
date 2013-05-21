@@ -945,6 +945,11 @@
   any open set <math|O> such that <math|x\<in\>O> <math|\<exists\>N >such
   that <math|\<forall\>n\<in\>N> <math|x<rsub|n>\<in\>O>.
 
+  <with|font-series|bold|Note.> They key part of the above theorem is to use
+  the fact that you can impose an ordering on the sets which form the system
+  of definite neighbourhoods. As if <math|G<rsub|i>\<nsubset\>G<rsub|i+1>
+  make G<rsub|i>=\<cap\><rsup|i+1><rsub|j=0>G<rsub|j>>
+
   <with|font-series|bold|Example>
 
   Of a space that is not first countable. The co-finite topology on an
@@ -999,6 +1004,10 @@
   <math|V<rsub|1>\<subset\>O<rsub|V<rsub|1>>> and
   <math|V<rsub|2>\<subset\>O<rsub|V<rsub|2>>> and
   <math|O<rsub|V<rsub|1>>\<cap\>O<rsub|V<rsub|2>>=\<phi\>>.
+
+  <with|font-series|bold|Theorem>
+
+  Any metric space is normal.
 
   <with|font-series|bold|Theorem>
 
