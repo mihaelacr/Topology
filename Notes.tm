@@ -515,9 +515,25 @@
 
   Lipschitz equivalent metrics are topolically equivalent.\ 
 
-  Proof uses result on open balls which come from the definition of Le.
+  Proof uses result on open balls which come from the definition of Lipschitz
+  equivalence..
 
-  <with|font-series|bold|Definition:>
+  <with|font-series|bold|Theorem>
+
+  diam <math|<wide|S|\<bar\>>> = diam <math|S>
+
+  <with|font-series|bold|Theorem>
+
+  Define <math|d<around*|(|x,A|)>= inf<rsub|a\<in\>A>d<around*|(|x,a|)>>.
+  Then
+
+  \ \ \ \ 1. <math|f<around*|(|x|)>=d<around*|(|x,A|)>> is continous
+
+  \ \ \ \ 2. <math|d<around*|(|x,A|)> =0 > iff <math|x\<in\><wide|A|\<bar\>>>
+
+  <\with|font-series|bold>
+    Definition:
+  </with>
 
   <math|f:X\<rightarrow\>Y> where <math|X,Y> are metric spaces is called a
   <with|font-series|bold|homeomorphism> if <math|f> is bijective and both
@@ -1174,8 +1190,17 @@
 
   <with|font-series|bold|Definition>
 
-  A set is totally bounded if for any positive <math|\<varepsilon\>> there
-  exists a finite <math|\<varepsilon\>-net.>
+  A space is called<with|font-series|bold| separable> if it has a countable
+  set that is dense in it. (<math|R> is separable as <math|Q is >countable
+  and dense in it).\ 
+
+  <with|font-series|bold|Definition>
+
+  A set is <with|font-series|bold|totally bounded> if for any positive
+  <math|\<varepsilon\>> there exists a finite <math|\<varepsilon\>-net.>
+
+  Note that the lecturer defines <math|\<varepsilon\>-net with closed balls
+  instead of open balls.>
 
   <with|font-series|bold|Theorem>
 
@@ -1184,6 +1209,29 @@
   <with|font-series|bold|Theorem>
 
   Any bounded space in <math|R<rsub|n>> is totally bounded.
+
+  <with|font-series|bold|Theorem>
+
+  Any totally bounded set is separable.
+
+  (Take <math|M\<in\>N> and the <math|1/M>-net.\ 
+
+  <with|font-series|bold|Theorem>
+
+  Any totally bounded set has a Cauchy sequence.
+
+  <with|font-series|bold|Theorem>
+
+  Any totally bounded and complete space is compact.
+
+  <with|font-series|bold|Theorem>
+
+  Let <math|M> be a complete space.\ 
+
+  \ \ \ 1). A subspace is compact iff it is closed and totally bounded.
+
+  \ \ \ 2). A subspace of <math|M<rsub|1>> is relatively compact iff it is
+  totally bounded.
 
   <\with|font-series|bold>
     Example
@@ -1199,7 +1247,23 @@
   \<varepsilon\>\<less\>1>. Then <math|R> is finite as <math|A<rsub|n>> is
   finite. Contradiction.\ 
 
-  \;
+  <with|font-series|bold|Another example>
+
+  Take the set of series with elements from <math|R> such that
+  <math|<big|sum><rsup|\<infty\>><rsub|i=0>x<rsub|i>\<less\>\<infty\>>.
+  Define the metric between sequences to be
+  <math|d<rsub|\<infty\>><around*|(|x,y|)>=<sqrt|<big|sum><rsup|\<infty\>><rsub|i=0><around*|(|x<rsub|n>-y<rsub|n>|)><rsup|2>>>
+
+  Then let <math|P > the sphere of radius 1 in this space, ie all the points
+  such that <math|d<around*|(|x,0|)>=1>. <math|P> is bounded but is not
+  totally bounded.
+
+  As consider <math|e<rsub|i>=<around*|(|0,0,0\<ldots\>.,1,0\<ldots\>.|)>
+  with 1 in the i<rprime|'>th position.> Then
+  <math|d<around*|(|e<rsub|i>,e<rsub|j>|)>=<sqrt|2>>, so there is no open
+  ball (or closed) of radius smaller than <math|<sqrt|2>/2> that contains 2
+  points <math|e<rsub|i>> and <math|e<rsub|j>.> So there is no finite net for
+  that.
 
   -- I think that in R_n every bounded space is totally bounded.\ 
 
