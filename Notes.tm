@@ -1351,9 +1351,22 @@
   <math|*\<varepsilon\>> cover the set, so they edge points form a finite
   <math|\<varepsilon\>> -net.
 
-  \;
+  <with|font-series|bold|Theorem>
 
-  \;
+  In a the space <math|C<rsub|\<infty\>><around*|[|a,b|]>> a set of functions
+  is relatively compact iff it is uniformly bounded and equicontinous. A set
+  <math|\<Phi\>> of functions is called uniformly bounded if
+  <math|\<exists\>K> such that <math|<around*|\||f<around*|(|x|)>|\|>\<leqslant\>K>,
+  <math|\<forall\>f\<in\>\<Phi\> and x\<in\><around*|[|a,b|]>>. A set of
+  functions is equicontinous if <math|\<forall\>\<varepsilon\>\<gtr\>0
+  \<exists\>\<delta\> such that <around*|\||x<rsub|1>-x<rsub|2>|\|>\<less\>\<delta\>\<Rightarrow\><around*|\||f<around*|(|x<rsub|1>|)>-f<around*|(|x<rsub|2>|)>|\|>\<less\>\<varepsilon\>
+  \<forall\>f\<in\>\<Phi\> and x<rsub|1>,x<rsub|2>\<in\><around*|[|a,b|]>>.
+
+  Hint. Use the fact that <math|C<rsub|\<infty\>><around*|[|a,b|]>> is
+  complete and that a subspace is realtively compact in a complete space if
+  and only if it is totally bounded. The <math|\<Leftarrow\>> part of the
+  proof uses piecewise linear functions and the <math|\<varepsilon\>/5>
+  argument.
 
   \;
 
