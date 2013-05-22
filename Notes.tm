@@ -1247,11 +1247,17 @@
 
   <with|font-series|bold|Theorem>
 
-  If <math|X> is a compact space and <math|Y> is a Hausdorff space and there
-  exists <math|f:X\<rightarrow\>Y> continous and bijective, then <math|f> is
-  a homeomorphism.
+  If <math|X> is a<with|font-series|bold| compact space> and <math|Y> is a
+  <with|font-series|bold|Hausdorff space> and <math|f:X\<rightarrow\>Y> is
+  continous and bijective, then <math|f> is a homeomorphism.
 
-  \;
+  <with|font-series|bold|Important example>
+
+  A subspace of a metric space that is closed and bounded but not compact:
+  Any infinite subet with the discrete topology. For example
+  <math|<around*|[|a,b|]>> is a closed and bounded subset of <math|R> with
+  the discrete topology, but it is not sequentially compact, as there is no
+  <math|1/2> \ finite net for <math|<around*|[|a,b|]>.>
 
   <with|font-series|bold|Sequential compactness>
 
