@@ -1290,7 +1290,7 @@
 
   <with|font-series|bold|Theorem>
 
-  Any totally bounded set has a Cauchy sequence.
+  Any sequence in a totally bounded set has a Cauchy subsequence.
 
   <with|font-series|bold|Theorem>
 
