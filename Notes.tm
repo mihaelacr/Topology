@@ -590,6 +590,13 @@
 
   With the discrete metric, every space is bounded.
 
+  <with|font-series|bold|Important>
+
+  Any metric space is topologically equivalent to a bounded metric space.
+  This comes from the fact that <math|<around*|(|X,d|)>> is top. equivalent
+  with <math|<around*|(|X,d<rsub|1>|)>> where
+  <math|d<rsub|1><around*|(|x,y|)>=min<around*|{|1\<nocomma\>,d<around*|(|x,y|)>|}>.>
+
   \;
 
   \;
@@ -1030,6 +1037,11 @@
 
   Any compact Hausdorff space is regular and normal.
 
+  In order to prove that Hausforfness is a topological property you do not
+  use the usual, <math|X has property so f<around*|(|X|)> has property if f
+  continous.> Instead you use <math|f:X\<rightarrow\> Y> continous and
+  injective and <math|Y> is Hausdorff, then <math|X> is Hausdorff.
+
   \;
 
   <with|font-series|bold|Connected spaces>
@@ -1201,8 +1213,8 @@
 
   <with|font-series|bold|Definition>
 
-  We call a system of sets centered if the intersection of any finite subset
-  of it is non-empty.
+  We call a <with|font-series|bold|system of sets centered> if the
+  intersection of any finite subset of it is non-empty.
 
   (ie. Given <math|<around*|{|V<rsub|\<alpha\>>|}>> a system of sets with
   <math|\<alpha\>\<in\>I\<nocomma\>>, <math|I> indexing set
@@ -1214,6 +1226,12 @@
   A set is <with|font-series|bold|compact> iff every
   <with|font-series|bold|centered system of closed sets> has a non empty
   intersection.
+
+  <with|font-series|bold|Theorem>
+
+  Let <math|V<rsub|i>> a system of non-empty closed sets in a compact space
+  such that<math| V<rsub|i>\<supset\>V<rsub|i+1>>. Then
+  <math|\<cap\><rsup|\<infty\>><rsub|i=0>V<rsub|i>\<neq\>\<Phi\>>.
 
   <with|font-series|bold|Theorem>
 
