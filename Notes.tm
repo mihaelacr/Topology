@@ -529,7 +529,9 @@
 
   \ \ \ \ 1. <math|f<around*|(|x|)>=d<around*|(|x,A|)>> is continous
 
-  \ \ \ \ 2. <math|d<around*|(|x,A|)> =0 > iff <math|x\<in\><wide|A|\<bar\>>>
+  \ \ \ \ 2. <math|d<around*|(|x,A|)> =0 > iff
+  <math|x\<in\><wide|A|\<bar\>>>. Note that if <math|A> is closed then this
+  means that \ <math|d<around*|(|x,A|)> =0 > iff <math|x\<in\>A>.
 
   <\with|font-series|bold>
     Definition:
@@ -1271,6 +1273,16 @@
   Note that the lecturer defines <math|\<varepsilon\>-net with closed balls
   instead of open balls.>
 
+  <with|font-series|bold|Definition>: <math|\<varepsilon\>-net>
+
+  A set <math|S > is an <math|\<varepsilon\>-net for A\<nocomma\>>, a
+  subspace of a topological space <math|X> if <math|\<forall\>x\<in\>A
+  \<exists\>s\<in\>S such that d<around*|(|x,s|)>\<less\>\<varepsilon\>>.
+
+  Observations: the points of <math|S do not have to be points of A>.
+  <math|<around*|{|B<rsub|\<varepsilon\>><around*|(|s|)><around*|\||s\<in\>S|\<nobracket\>>|}>>
+  is an open cover for <math|A.>
+
   <with|font-series|bold|Theorem>
 
   Any totally bounded metric space is bounded.
@@ -1353,10 +1365,11 @@
 
   <with|font-series|bold|Theorem>
 
-  In a the space <math|C<rsub|\<infty\>><around*|[|a,b|]>> a set of functions
-  is relatively compact iff it is uniformly bounded and equicontinous. A set
-  <math|\<Phi\>> of functions is called uniformly bounded if
-  <math|\<exists\>K> such that <math|<around*|\||f<around*|(|x|)>|\|>\<leqslant\>K>,
+  In a the space <math|C<rsub|\<infty\>><around*|[|a,b|]>> a set of
+  <with|font-series|bold|continous> functions is relatively compact iff it is
+  uniformly bounded and equicontinous. A set <math|\<Phi\>> of functions is
+  called uniformly bounded if <math|\<exists\>K> such that
+  <math|<around*|\||f<around*|(|x|)>|\|>\<leqslant\>K>,
   <math|\<forall\>f\<in\>\<Phi\> and x\<in\><around*|[|a,b|]>>. A set of
   functions is equicontinous if <math|\<forall\>\<varepsilon\>\<gtr\>0
   \<exists\>\<delta\> such that <around*|\||x<rsub|1>-x<rsub|2>|\|>\<less\>\<delta\>\<Rightarrow\><around*|\||f<around*|(|x<rsub|1>|)>-f<around*|(|x<rsub|2>|)>|\|>\<less\>\<varepsilon\>
