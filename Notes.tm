@@ -1556,26 +1556,126 @@
   at <math|f>, such that <math|f<rsub|n> >is continous at <math|c\<in\>D> for
   all <math|f<rsub|n>>. Then <math|f is continous at c.>
 
+  Implication: limits can be interchanged:
+
+  <\equation*>
+    lim<rsub|n\<rightarrow\>\<infty\>><around*|(|lim<rsub|x\<rightarrow\>c>f<rsub|n><around*|(|x|)>|)>=
+    lim<rsub|x\<rightarrow\>c>lim<rsub|n\<rightarrow\>\<infty\>>f<rsub|n><around*|(|x|)>
+  </equation*>
+
   Note. This is a way of discarding uniform convergence. Is a sequence of
   functions is continous but they converge pointwise to a function that is
   not continous, then the sequence of functions does not congerge uniformly.
   See the <math|x<rsup|n>> example.
 
-  \;
+  <with|font-series|bold|Steps in checking if a sequence of functions is
+  uniform convergent.>
 
-  \;
+  1. Check if it is pointwise convergent. If not, it is not uniform
+  convergent.
 
-  \;
+  2. Apply the <math|M<rsub|n>> criteria using the <math|f> determined using
+  pointwise convergence. Use Fermat's theoem to determine at which point the
+  supremum of the function occurs. Ensure the heads of the interval are also
+  checked (not part of Fermat). Find out <math|M<rsub|n>> and check if it
+  tends to 0.
 
-  \;
+  <with|font-series|bold|Important corrollary>
 
-  \;
+  In the set of bounded functions with <math|d<rsub|\<infty\>>> the set of
+  function continous at <math|c> is closed. As if
+  <math|f<rsub|n>\<rightarrow\>f>, then <math|f> is continous at <math|c> so
+  it is in the set.
 
-  \;
+  <with|font-series|bold|Complete spaces>
 
-  \;
+  <with|font-series|bold|Definition>
 
-  \;
+  A metric space <math|X> is called <with|font-series|bold|complete> if every
+  Cauchy sequence converges to a point in <math|X>.
+
+  <with|font-series|bold|Theorem>
+
+  A complete subspace of a metric space is closed.
+
+  <with|font-series|bold|Theorem>
+
+  If a subsequence of a Cauchy sequence converges, the sequence converges.
+
+  <with|font-series|bold|Theorem>
+
+  Any compact metric space is Cauchy.
+
+  <with|font-series|bold|Theorem>
+
+  Any closed subset of a complete metric space is complete.
+
+  <\with|font-series|bold>
+    Theorem
+  </with>
+
+  <math|C<rsub|\<infty\>><around*|[|a,b|]>> is complete. This follwos from
+  Cauchy's criteria that every sequence of functions that is uniformly Cauchy
+  is uniformly convergent.
+
+  <with|font-series|bold|Theorem>
+
+  <math|X \<times\>Y> is complete iff <math|X> and <math|Y > are complete.
+
+  <with|font-series|bold|Theorem>
+
+  Let <math|X and Y> be spaces such that <math|\<exists\>f:X\<rightarrow\>Y>
+  such that <math|f> is bijective and <math|f> and <math|f<rsup|-1>> are
+  unformly continous. Then <math|X> is complete iff <math|Y >is complete.
+
+  <with|font-series|bold|Note! This implies that completeness is not a
+  topological property.>
+
+  <\with|font-series|bold>
+    Definition
+  </with>
+
+  A function <math|f:D\<rightarrow\>R> is said to satisfy the
+  <with|font-series|bold|Lipschitz condition> of order <math|\<alpha\>> and
+  constant <math|K> if:
+
+  <\equation*>
+    <around*|\||f<around*|(|x|)>-f<around*|(|y|)>|\|>\<less\>K<around*|\||x-y|\|><rsup|\<alpha\>>
+  </equation*>
+
+  <with|font-series|bold|Theorem>
+
+  1. Any function <math|>that satisifies the Lipschitz condition of order
+  \<gtr\>0 is uniformly continous.
+
+  2. Any function <math|f:<around*|[|a,b|]>\<rightarrow\>R> satisfying the
+  Lipschitz condition of order \<gtr\>1 is constant.
+
+  3. Let <math|f> be a function continous on <math|<around*|[|a,b|]>> and
+  differentiable on <math|<around*|(|a,b|)>> such that
+  <math|\<forall\>x\<in\><around*|(|a,b|)>
+  <around*|\|||\<nobracket\>>f<rprime|'><around*|(|x|)><around*|\|| \<less\>
+  K|\<nobracket\>>>.\ 
+
+  Then <math|f> satisfies the Lipschitz condition of order 1 and constant
+  <math|K>.
+
+  <with|font-series|bold|Definition>
+
+  <math|f:X\<rightarrow\>X> is called a contraction if
+  <math|\<exists\>K\<less\>1> such that <math|d<rsub|x><around*|(|f<around*|(|x|)>,f<around*|(|y|)>|)>\<less\>K*d<around*|(|x,y|)>>
+  <math|\<forall\>x,y\<in\>X>.
+
+  <with|font-series|bold|Theorem>: Banach
+
+  Let <math|X> be a complete space and <math|f> a contraction on <math|X>.
+  Then <math|f> has a unique fixed point.
+
+  <with|font-series|bold|Theorem: Generalized Banach>
+
+  Let <math|X> be a complete space and <math|f> such that
+  <math|\<exists\>k\<in\>N> such that <math|f<rsup|k> >is a contraction. Then
+  <math|f> has a unique fixed point.
 
   \;
 
