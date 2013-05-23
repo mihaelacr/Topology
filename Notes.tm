@@ -1492,7 +1492,37 @@
     inf<around*|(|diam V<rsub|n>:n\<in\>N|)>
   </equation*>
 
-  \;
+  <with|font-series|bold|Uniform convergence>
+
+  In the below theorems <math|f<rsub|n> is >a sequence of functions with
+  <math|f<rsub|n>:D\<rightarrow\>R> where <math|D >is a subset of <math|R.>
+
+  <with|font-series|bold|Definition>: <with|font-series|bold|pointwise
+  convergence>
+
+  <math|f<rsub|n>> is said to pointwise converge to <math|f<around*|(|x|)>>
+  if the sequence <math|f<rsub|n><around*|(|x|)>> converges to
+  <math|f<around*|(|x|)>>.
+
+  <with|font-series|bold|Observation>
+
+  Pointwise convergence does not guarantee that if the elements of the
+  sequence are convergent, the limit is convergent. Consider the sequence
+  <math|f<rsub|n><around*|(|x|)>= x<rsup|n>>. Then
+  <math|f<rsub|n><around*|(|x|)>\<rightarrow\>f<around*|(|x|)>>, where
+  <math|f<around*|(|x|)>=<choice|<tformat|<table|<row|<cell|0,x\<neq\>1>>|<row|<cell|1\<nocomma\>,x=1>>>>>>
+
+  <with|font-series|bold|Definition>: <with|font-series|bold|uniform
+  convergence>
+
+  <math|f<rsub|n><around*|(|x|)>> is said to uniformly converge to <math|f>
+  if <math|\<forall\>\<varepsilon\>\<gtr\>0 \<exists\>N<rsub|\<varepsilon\>>
+  such that \<forall\>n\<gtr\>N<rsub|\<varepsilon\>>
+  <around*|\||f<rsub|n><around*|(|x|)>- f<around*|(|x|)>|\|>\<less\>\<varepsilon\>>.
+
+  Uniform convergence preserves continuity.
+
+  Uniform convergence implies pointwise convergence.
 
   \;
 
