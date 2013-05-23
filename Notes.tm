@@ -1481,6 +1481,17 @@
 
   Any sequentially compact space is compact.
 
+  <with|font-series|bold|Theorem>
+
+  Let <math|X> be a compact metric space and
+  <math|V<rsub|1>\<supset\>V<rsub|2>\<supset\>\<ldots\>. > a nested sequence
+  of closed subsets in <math|X.> Then:
+
+  <\equation*>
+    diam<around*|(|<big|cap><rsub|n=1<rsup|>><rsup|\<infty\>>V<rsub|n>|)>=
+    inf<around*|(|diam V<rsub|n>:n\<in\>N|)>
+  </equation*>
+
   \;
 
   \;
