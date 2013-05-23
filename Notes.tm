@@ -1255,6 +1255,16 @@
 
   <with|font-series|bold|Theorem>
 
+  <math|p<rsub|X>:X\<times\>Y\<rightarrow\> X> and <math|Y> be compact. Then
+  if <math|W> is closed in <math|X \<times\>Y> then
+  <math|p<rsub|X><around*|(|W|)>> is closed in <math|X>.
+
+  This is not generally true, consider <math|<around*|(|x,1/x|)> in
+  R<rsup|2>>, with <math|x\<neq\>0>. That is closed but it's projection is
+  not closed.
+
+  <with|font-series|bold|Theorem>
+
   If<math|f:X\<rightarrow\>Y> is continous, and <math|X> is a compact space,
   then <math|f> is uniformly continous.
 
@@ -1405,7 +1415,64 @@
   proof uses piecewise linear functions and the <math|\<varepsilon\>/5>
   argument.
 
-  \;
+  <with|font-series|bold|Sequentially compact spaces>
+
+  <with|font-series|bold|Definition>
+
+  A metric space is sequentially compact if every sequence has a convergent
+  subsequence <with|font-series|bold|that converged to a point in it.>
+
+  <with|font-series|bold|Theorem>
+
+  A subset of <math|R> is sequentially compact iff it is closed and bounded.
+
+  Note. To prove this you have to use that any bounded subsequence in
+  <math|R> has a monotonic subsequence and since any monotonic bounded
+  subsequence in <math|R>, converges, you have a convergent subsequence. But
+  the set is closed etc.
+
+  <with|font-series|bold|Theorem>
+
+  Let <math|x\<in\><around*|(|X,d|)>> such that
+  <math|\<forall\>\<varepsilon\>\<gtr\>0B<rsub|\<varepsilon\>><around*|(|x|)>>
+  contains <math|x<rsub|n> for <with|font-series|bold|infinitely many values
+  of n>>. Then <math|\<exists\>> a subsequence of <math|x<rsub|n>> that
+  converges to <math|x.>
+
+  <with|font-series|bold|Corollary>
+
+  A sequence has no convergent subsequnce if <math|\<forall\>x\<in\>X
+  \<exists\>\<varepsilon\><rsub|x> such that
+  B<rsub|\<varepsilon\><rsub|x>><around*|(|x|)> has x<rsub|n>> for finitely
+  many values of <math|n.>
+
+  <with|font-series|bold|Theorem>
+
+  Any compact space is sequentially compact.
+
+  <with|font-series|bold|Theorem>
+
+  Any closed subspace if a sequentially compact space is sequentially
+  compact.
+
+  <with|font-series|bold|Theorem>
+
+  Any sequentially compact space is totally bounded. (Hence, it is bounded).
+
+  <with|font-series|bold|Definition: Lesbeque number>
+
+  <math|\<varepsilon\>\<gtr\>0> is called a <with|font-series|bold|Lesbeque
+  number for an open cover> <math|\<frak-U\> > <math|\<forall\>x\<in\>X>
+  <math|\<exists\>U\<in\>\<frak-U\> > such that
+  <math|B<rsub|\<varepsilon\>><around*|(|x|)>\<subset\>U>.
+
+  <with|font-series|bold|Theorem>
+
+  Any open cover in a sequentially compact space has a Lesbeque number.
+
+  <with|font-series|bold|Theorem>
+
+  Any sequentially compact space is compact.
 
   \;
 
