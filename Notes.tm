@@ -1466,9 +1466,16 @@
   <math|\<exists\>U\<in\>\<frak-U\> > such that
   <math|B<rsub|\<varepsilon\>><around*|(|x|)>\<subset\>U>.
 
+  Hint. Argue by contradiction. Build a sequence such that
+  <math|d<around*|(|x<rsub|n>,x<rsub|m>|)>\<gtr\>\<varepsilon\>\<nocomma\>\<forall\>m,n\<in\>N>.
+  This sequent has no Caunchy subsequence, so no convergent subsequence.
+
   <with|font-series|bold|Theorem>
 
   Any open cover in a sequentially compact space has a Lesbeque number.
+
+  Hint. Argue by contradiction. Then <math|1/n> is not a Lesbeque number for
+  any <math|n>. Build a sequence.
 
   <with|font-series|bold|Theorem>
 
