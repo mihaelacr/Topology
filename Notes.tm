@@ -1524,6 +1524,45 @@
 
   Uniform convergence implies pointwise convergence.
 
+  <with|font-series|bold|Criteria for determinng uniform convergence>
+
+  A sequence of functions <math|f<rsub|n>> is uniformly convergent if and
+  only if <math|M<rsub|n>=sup<rsub|x\<in\>D><around*|\||f<rsub|n><around*|(|x|)>-f<around*|(|x|)>|\|>>
+  exists for large enough <math|n >and converges to 0.
+
+  <with|font-series|bold|Uniform convergence is equivalent to covergence in
+  <math|d<rsub|\<infty\>>.>>
+
+  <with|font-series|bold|Definition: Uniform Cauchy sequence>
+
+  A sequence of functions <math|f<rsub|n>> is uniformly Cauchy if
+  <math|\<forall\>\<varepsilon\>\<gtr\>0\<exists\>N<rsub|\<varepsilon\>>>
+  such that <math|\<forall\>m,n\<gtr\>N<rsub|\<varepsilon\>>
+  <around*|\||f<rsub|n><around*|(|x|)>-f<rsub|m><around*|(|x|)>|\|>\<less\>\<varepsilon\>>
+  <math|\<forall\>x\<in\>D>.
+
+  <with|font-series|bold|The Cauchy criteria>\ 
+
+  A sequence of functions is uniformly Cauchy if and only if it is uniformly
+  convergent.
+
+  Note. This gives a good way of checking is a sequence of functions is
+  uniform convergent without knowing the function to which it converges in
+  advance.
+
+  <with|font-series|bold|Theorem>
+
+  Let <math|f<rsub|n>> be a sequence of functions which converges uniformly
+  at <math|f>, such that <math|f<rsub|n> >is continous at <math|c\<in\>D> for
+  all <math|f<rsub|n>>. Then <math|f is continous at c.>
+
+  Note. This is a way of discarding uniform convergence. Is a sequence of
+  functions is continous but they converge pointwise to a function that is
+  not continous, then the sequence of functions does not congerge uniformly.
+  See the <math|x<rsup|n>> example.
+
+  \;
+
   \;
 
   \;
