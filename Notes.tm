@@ -1187,6 +1187,11 @@
 
   Any open and connected subset of <math|R<rsub|n> >is path connected.\ 
 
+  Idea on proving something is connected:
+
+  If it is not <math|f<around*|(|X|)>> where <math|X> is connected it might
+  be included in <wide|<math|f<around*|(|X|)>>|\<bar\>>.
+
   <with|font-series|bold|Compact spaces>
 
   <with|font-series|bold|Definition>
@@ -1712,15 +1717,18 @@
 
   \;
 
-  \;
-
-  \;
-
   <with|font-series|bold|Comparison between metric and topological spaces>
 
   \;
 
   <with|font-series|bold|Special cases for <math|R<rsup|n>>>
+
+  <math|R<rsup|n>> is complete.
+
+  Any closed and bounded space in <math|R<rsup|n>> is compact, but that is
+  not generally the case.
+
+  A subset of <math|\<bbb-R\>> is connected iff it is an interval.
 
   \;
 
@@ -1728,15 +1736,28 @@
 
   <with|font-series|bold|Definition: Separable space>
 
-  \;
+  A space is called separable if there exists a countable set that is dense
+  in it.
+
+  Any totally bounded space is separable.
 
   <with|font-series|bold|Definition: Second countable space>
 
-  \;
+  A space is called second countable if it has a countable basis.
 
   <with|font-series|bold|Definition: First countable space>
 
-  \;
+  A space is called first countable if for any point <math|x> in the space
+  there exists a <with|font-series|bold|countable> definite system of
+  neighbourhoods.
+
+  A definite system of neighnourhoods of <math|x> <math|G >is a set of open
+  sets such that <math|\<forall\>U open such that x\<in\>U>
+  <math|\<exists\>G<rsub|i>\<in\>G> such that <math|G<rsub|i>\<subset\>U>.
+
+  First countable topological spaces preserve the property that
+  <math|x\<in\><wide|A|\<bar\>>> iff <math|\<exists\>> a sequence of points
+  in <math|A> that tends to <math|x.>
 
   <with|font-series|bold|Function properties used in the course>
 
